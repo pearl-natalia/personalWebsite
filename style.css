@@ -66,6 +66,7 @@ p, h1, h2, h3{
 body {
   margin: 0;
   background-color: black;
+  overflow-x: hidden;
 }
 
 img {
@@ -96,7 +97,7 @@ img {
 }
 
 
-.w3-display-left, .w3-text-white{
+.w3-display-left, .w3-text-white, .zoom{
   animation: fadeIn 4s forwards;
   -webkit-animation: fadeIn 4s;
   -moz-animation: fadeIn 4s;
@@ -125,7 +126,6 @@ img {
 }
 
 .afterzoom {
-  padding-top: 100px;
   position: relative;
   height: 100%;
   width: 100%;
@@ -218,6 +218,31 @@ img {
   scroll-snap-type: mandatory;
 }
 
-        
+.nameDiv{
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media (max-width: 767px) {
+  .zoom {
+    background: url("mobileBackground.png") no-repeat;
+    background-size: cover;
+
+  }
+
+  .afterzoom{
+    margin-top: -30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .zoom {
+    background: url("desktopBackground.png") no-repeat;
+    background-size: cover;
+  }
+  .afterzoom{
+    margin-top: -15%;
+  }
+}
+
 
     
