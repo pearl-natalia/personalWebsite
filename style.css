@@ -295,5 +295,8 @@ img {
   .nameDivPadding4{
     height: 10vh;
   }
+    .experienceTile{
+        padding:16px
+  }
 
 }
