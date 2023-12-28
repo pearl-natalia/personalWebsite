@@ -24,15 +24,15 @@
     100% { opacity: 1; }
 }
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5,h6,p {font-family: "Raleway", sans-serif}
 
-@media screen and (max-width: 576px) {h1{font-size: 15px;}}
-@media screen and (min-width: 577px) and (max-width: 768px){h1{font-size: 15px;}}
-@media screen and (min-width: 769px) {h1{font-size: 16px;}}
-
-@media screen and (max-width: 576px) {p{font-size: 16px;}}
+@media screen and (max-width: 576px) {p{font-size: 15px;}}
 @media screen and (min-width: 577px) and (max-width: 768px){p{font-size: 20px;}}
 @media screen and (min-width: 769px) {p{font-size: 20px;}}
+
+@media screen and (max-width: 576px) {h1{font-size: 13px;}}
+@media screen and (min-width: 577px) and (max-width: 768px){h1{font-size: 15px;}}
+@media screen and (min-width: 769px) {h1{font-size: 16px;}}
 
 @media screen and (max-width: 576px) {h2{font-size: 20px;}}
 @media screen and (min-width: 577px) and (max-width: 768px){h2{font-size: 23px;}}
@@ -42,11 +42,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 @media screen and (min-width: 577px) and (max-width: 768px){h3{font-size: 45px;}}
 @media screen and (min-width: 769px) {h3{font-size: 50px;}}
 
-@media screen and (max-width: 576px) {h4{font-size: 11px;}}
+@media screen and (max-width: 576px) {h4{font-size: 8px;}}
 @media screen and (min-width: 577px) and (max-width: 768px){h4{font-size: 11px;}}
 @media screen and (min-width: 769px) {h4{font-size: 13px;}}
 
-@media screen and (max-width: 576px) {h5{font-size: 50px;}}
+@media screen and (max-width: 576px) {h5{font-size: 35px;}}
 @media screen and (min-width: 577px) and (max-width: 768px){h5{font-size: 60px;}}
 @media screen and (min-width: 769px) {h5{font-size: 70px;}}
 
@@ -88,14 +88,11 @@ img {
   background-position: center;
   background-size: cover;
   background-color: black;
-  min-height: 100%;
-  scroll-snap-align: start;
-}
+  min-height: 100%;}
 
 .w3-bar .w3-button {
   padding: 16px;
 }
-
 
 .w3-display-left, .w3-text-white, .zoom{
   animation: fadeIn 4s forwards;
@@ -108,34 +105,28 @@ img {
 .fade {
   height: 10%;
   width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
 }
 
 .zoom {
-  height: 100vh;
   width: 100%;
-  display: grid;
   place-items: center;
   position: absolute;
   top: 0;
   left: 0;
   background-color: black;
   z-index: 1;
+  height:100vh
 }
 
 .afterzoom {
-  position: relative;
   height: 100%;
   width: 100%;
+  margin-top: 100vh;
   overflow-x: hidden;
-  z-index: 2;
   background-color: black;
-  top:0;
-  left:0;
   align-items: center;
-  scroll-snap-type: y mandatory;
 }
 
 .m6{
@@ -146,7 +137,6 @@ img {
 .about-div{
   place-items: center;
   background-color: black;
-  scroll-snap-type: y mandatory;
 }
 
 .w3-button{
@@ -182,10 +172,6 @@ img {
   height:100%;
 }
 
-.projectsBox:hover{
-  background-color: rgba(255, 255, 255, 0.071);
-}
-
 .video-poster-overlay {
   position: absolute;
   background: url("resuview.png") no-repeat;
@@ -200,8 +186,6 @@ img {
 .skillList {
   border-radius: 25px;
   background: rgb(59, 59, 59);
-  padding-left: 15px;
-  padding-right: 15px;
   font: Raleway;
   display:inline-block;
   color: #827f7f;
@@ -209,40 +193,95 @@ img {
   
 }
 
-.skillList:hover{
-  background: rgb(44, 44, 45);
-}
-
-.about-div, .project-div, .work-div, .contact-div{
-  scroll-snap-align: center;
-  scroll-snap-type: mandatory;
-}
-
 .nameDiv{
   transform: translateX(-50%) translateY(-50%);
 }
 
+.arrow{
+  margin-top: -5%;
+}
+
+/* mobile */
 @media (max-width: 767px) {
   .zoom {
     background: url("mobileBackground.png") no-repeat;
     background-size: cover;
-
   }
-
+  .nameDivPadding1{
+    height: 25vh;
+  }
+  
+  .nameDivPadding2{
+    height: 40vh;
+    text-align: center;
+  }
+  
+  .nameDivPadding3{
+    height: 20vh;
+  }
+  
+  .nameDivPadding4{
+    height: 10vh;
+  }
+  
+  .zoom{
+    height: 100vh;
+  }
   .afterzoom{
-    margin-top: -30%;
+    padding-top: 20vh;
   }
+
+  .experiences{
+    margin-left: -3%;
+  }
+  .projectType{
+    font-size: 13px;
+
+  }
+
 }
 
+/* desktop & ipad */
 @media (min-width: 768px) {
   .zoom {
     background: url("desktopBackground.png") no-repeat;
     background-size: cover;
   }
-  .afterzoom{
-    margin-top: -15%;
+  .nameDivPadding1{
+    height: 35vh;
+  }
+  .nameDivPadding2{
+    height: 35vh;
+    text-align: left;
+    padding-left: 75px;
+  }
+  .nameDivPadding3{
+    height: 20vh;
+  }
+  .nameDivPadding4{
+    height: 10vh;
+  }
+  .zoom{
+    height: 100vh;
+  }
+
+}
+
+/* mobile and ipad */
+@media (max-width: 991px) {
+  .skillList{
+    padding-left: 7px;
+    padding-right: 7px;
   }
 }
 
-
-    
+/* only desktop */
+@media(min-width: 992px){
+  .skillList{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .skillList:hover{
+    background: rgb(44, 44, 45);
+  }
+}
