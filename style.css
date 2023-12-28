@@ -280,12 +280,12 @@ img {
 }
 
 /* only ipad */
-@media(min-width: 768px) and (max-width:992px){
+@media(min-width: 768px) and (max-width:991px){
   .nameDivPadding1{
-    height: 20vh;
+    height: 25vh;
   }
   .nameDivPadding2{
-    height: 50vh;
+    height: 45vh;
     text-align: left;
     padding-left: 75px;
   }
