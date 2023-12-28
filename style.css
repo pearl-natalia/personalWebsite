@@ -223,10 +223,6 @@ img {
   .nameDivPadding4{
     height: 10vh;
   }
-  
-  .zoom{
-    height: 100vh;
-  }
   .afterzoom{
     padding-top: 20vh;
   }
@@ -246,23 +242,6 @@ img {
   .zoom {
     background: url("desktopBackground.png") no-repeat;
     background-size: cover;
-  }
-  .nameDivPadding1{
-    height: 35vh;
-  }
-  .nameDivPadding2{
-    height: 35vh;
-    text-align: left;
-    padding-left: 75px;
-  }
-  .nameDivPadding3{
-    height: 20vh;
-  }
-  .nameDivPadding4{
-    height: 10vh;
-  }
-  .zoom{
-    height: 100vh;
   }
 
 }
@@ -284,4 +263,37 @@ img {
   .skillList:hover{
     background: rgb(44, 44, 45);
   }
+  .nameDivPadding1{
+    height: 35vh;
+  }
+  .nameDivPadding2{
+    height: 35vh;
+    text-align: left;
+    padding-left: 75px;
+  }
+  .nameDivPadding3{
+    height: 20vh;
+  }
+  .nameDivPadding4{
+    height: 10vh;
+  }
+}
+
+/* only ipad */
+@media(min-width: 768px) and (max-width:992px){
+  .nameDivPadding1{
+    height: 20vh;
+  }
+  .nameDivPadding2{
+    height: 50vh;
+    text-align: left;
+    padding-left: 75px;
+  }
+  .nameDivPadding3{
+    height: 20vh;
+  }
+  .nameDivPadding4{
+    height: 10vh;
+  }
+
 }
