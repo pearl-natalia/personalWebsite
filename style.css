@@ -260,6 +260,10 @@ img {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .projectsBox:hover{
+    background-color: #615c5c16;
+  }
   .skillList:hover{
     background: rgb(44, 44, 45);
   }
