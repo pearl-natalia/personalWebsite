@@ -253,13 +253,16 @@
                 }
                 //if mobile
                 else{
-                    clip2.on('tap', function() {
-                      if (clip2.paused()) {
-                        clip2.play();
-                      } else {
-                        clip2.load();
-                      }
-                    });
+                    clip2.addEventListener('click', toggleFullScreen);
+                    function toggleFullScreen() {
+                        if (!document.fullscreenElement) {
+                            clip2.requestFullscreen().catch(err => {
+                            console.error('Fullscreen request failed:', err);
+                            });
+                        } else {
+                            clip2.exitFullscreen();
+                        }
+                    } 
                     // //play
                     // clip2.on("click touchstart", "video", function(){
                     // clip2.play();})
