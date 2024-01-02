@@ -223,16 +223,16 @@ img {
   .nameDivPadding4{
     height: 10vh;
   }
-  .afterzoom{
-    padding-top: 20vh;
-  }
-
+  
   .experiences{
     margin-left: -3%;
   }
   .projectType{
     font-size: 13px;
 
+  }
+    .afterzoom{
+    padding-top: 10vh;
   }
 
 }
@@ -243,6 +243,10 @@ img {
     background: url("desktopBackground.png") no-repeat;
     background-size: cover;
   }
+  .afterzoom{
+    padding-top: 20vh;
+  }
+        
 
 }
 
