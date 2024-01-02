@@ -160,32 +160,8 @@
                     loop style="width: 100%;"> 
                 </video>
             </div>
-            <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                const clip1 = document.querySelector(".resuview-vid");
-                // Check if it's a mobile device
-                if (window.orientation !== undefined || navigator.maxTouchPoints > 0) {
-                  // Mobile
-                  clip1.addEventListener("click", function () {
-                    if (clip1.paused) {
-                      clip1.play();
-                    } else {
-                      clip1.pause();
-                    }
-                  });
-                } else {
-                  // Desktop
-                  clip1.addEventListener("mouseover", function () {
-                    clip1.play();
-                  });
-                  clip1.addEventListener("mouseout", function () {
-                    clip1.load();
-                  });
-                }
-              });
-            </script>
 
-<!--             <script> 
+            <script> 
                 let clip1 = document.querySelector(".resuview-vid") 
                 //if desktop
                 if (window.orientation != "undefined") {
@@ -205,7 +181,7 @@
                     clip1.onended = function() {
                     clip1.load();};
                 }
-            </script> -->
+            </script>
 
             <div class = "w3-row">
                 <h4 class="skillList">SQL</h4>
