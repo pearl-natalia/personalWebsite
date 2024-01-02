@@ -253,12 +253,21 @@
                 }
                 //if mobile
                 else{
-                    //play
-                    clip2.on("click touchstart", "video", function(){
-                    clip2.play();})
-                    //pause
-                    clip2.onended = function() {
-                    clip2.load();};
+                    clip2.on('touchstart', function (e) {
+                    if (e.target.nodeName === 'VIDEO') {
+                        if (!clip2.paused()&&!clip2.ended==false&& clip2.currentTime>0){
+                            this.load();
+                        } else {
+                            this.play();
+                        }
+                        }
+                    });
+                    // //play
+                    // clip2.on("click touchstart", "video", function(){
+                    // clip2.play();})
+                    // //pause
+                    // clip2.onended = function() {
+                    // clip2.load();};
                 }
             </script>
 
