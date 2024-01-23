@@ -210,13 +210,11 @@ img {
   .nameDivPadding1{
     @media (max-height: 844px) {height: 15vh;}
     @media (min-height: 845px) {height: 25vh;}
-
-
-    
   }
   
   .nameDivPadding2{
-    height: 40vh;
+    @media (max-height: 844px) {height: 50vh;}
+    @media (min-height: 845px) {height: 40vh;}
     text-align: center;
   }
   
