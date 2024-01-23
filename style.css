@@ -140,7 +140,7 @@ img {
 }
 
 .w3-button{
-  background-image: url('buttonBackground.png');
+  background-image: url('images/buttonBackground.png');
   border-radius: 8px;
 }
 
@@ -174,7 +174,7 @@ img {
 
 .video-poster-overlay {
   position: absolute;
-  background: url("resuview.png") no-repeat;
+  background: url("images/resuview.png") no-repeat;
   background-size: cover;
   z-index: 2;
   top: 0;
@@ -204,7 +204,7 @@ img {
 /* mobile */
 @media (max-width: 767px) {
   .zoom {
-    background: url("mobileBackground.png") no-repeat;
+    background: url("images/mobileBackground.png") no-repeat;
     background-size: cover;
   }
   .nameDivPadding1{
@@ -234,17 +234,25 @@ img {
     .afterzoom{
     padding-top: 5vh;
   }
+  .icons a {
+    font-size: 15px;
+  }
 
 }
+
+
 
 /* desktop & ipad */
 @media (min-width: 768px) {
   .zoom {
-    background: url("desktopBackground.png") no-repeat;
+    background: url("images/desktopBackground.png") no-repeat;
     background-size: cover;
   }
   .afterzoom{
     padding-top: 10vh;
+  }
+  .projectType{
+    font-size: 17px;
   }
         
 
@@ -267,6 +275,7 @@ img {
 
   .projectsBox:hover{
     background-color: #615c5c16;
+    cursor: pointer;
   }
   .skillList:hover{
     background: rgb(44, 44, 45);
@@ -285,6 +294,10 @@ img {
   .nameDivPadding4{
     height: 10vh;
   }
+  .icons a {
+    font-size: 25px;
+  }
+  
 }
 
 /* only ipad */
@@ -303,8 +316,11 @@ img {
   .nameDivPadding4{
     height: 10vh;
   }
-    .experienceTile{
-        padding:16px
+  .experienceTile{
+    padding:16px
+  }
+  .icons a {
+    font-size: 20px;
   }
 
 }
