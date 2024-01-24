@@ -285,6 +285,10 @@ img {
     padding-right: 15px;
   }
 
+  .rowTwo{
+    padding-top:20px
+  }
+
   .projectsBox:hover{
     background-color: #615c5c16;
     cursor: pointer;
