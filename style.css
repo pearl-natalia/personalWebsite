@@ -208,7 +208,7 @@ img {
     background-size: cover;
   }
   .nameDivPadding1{
-    @media (max-height: 844px) {height: 15vh;}
+    @media (max-height: 844px) {height: 18vh;}
     @media (min-height: 845px) {height: 25vh;}
   }
   
