@@ -321,7 +321,7 @@ img {
 /* only ipad */
 @media(min-width: 768px) and (max-width:991px){
   .nameDivPadding1{
-    height: 25vh;
+    height: 10vh;
   }
   .nameDivPadding2{
     height: 45vh;
