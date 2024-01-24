@@ -113,479 +113,477 @@
 
 <!-- Projects Section -->
 <div class="w3-container project-div" style="padding-top:100px; padding-bottom: 50px; background-color: black;" id="team">
-  <h3 class="w3-center" style="color: white;"><span style="font-weight: bold;">My Projects</span></h3>
-    <h1 class="w3-center w3-hide-small w3-hide-medium">
-        Hover over the images to see more...
-    </h1>
+    <h3 class="w3-center" style="color: white;"><span style="font-weight: bold;">My Projects</span></h3>
+    <h1 class="w3-center w3-hide-small w3-hide-medium">Hover over the images to see more...</h1>
 
-  <div class="w3-row-padding" style="padding-top: 40px;">
-    <div class="w3-col l4 m12 s12 w3-margin-bottom">
-      <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-        <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-            <div class="w3-row">
-                <div class="w3-row" style="padding-top: 20px;">
-                    <div class="w3-col projectType l4 m3 s7" style="background-color: #390d98;border-radius: 5px;text-align: center;
-                    font-weight: bold;color:#9570e6;">Augmented Reality</div>
+    <div class="w3-row-padding" style="padding-top: 40px;">
+        <div class="w3-col l4 m12 s12 w3-margin-bottom">
+            <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
+                <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
+                    <div class="w3-row">
+                        <div class="w3-row" style="padding-top: 20px;">
+                            <div class="w3-col projectType l4 m3 s7" style="background-color: #390d98;border-radius: 5px;text-align: center;
+                            font-weight: bold;color:#9570e6;">Augmented Reality</div>
 
-                    <div class="w3-col l5 m6 s2" style="color: transparent;">.</div>
-                    <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                        <p><a href="https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop" 
-                            class="w3-ripple w3-transparent" 
-                            target="_blank" 
-                            style="background-image: none;background-color: transparent;">
-                            <i class="fa fa-share"></i></a></p>
+                            <div class="w3-col l5 m6 s2" style="color: transparent;">.</div>
+                            <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
+                                <p><a href="https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop" 
+                                    class="w3-ripple w3-transparent" 
+                                    target="_blank" 
+                                    style="background-image: none;background-color: transparent;">
+                                    <i class="fa fa-share"></i></a></p>
+                            </div>
+                        </div>
+                            
+                        <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
+                            <h2>Résuview</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop','_newtab');">
+                        <video src= "videos/resuviewVideo.mp4"
+                            type="video/mp4" 
+                            muted class="resuview-vid"
+                            poster="images/thumbnail1.png"
+                            loop style="width: 100%;"> 
+                        </video>
+                    </div>
+
+                    <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">
+                        <video src= "videos/resuviewVideo.mp4"
+                            type="video/mp4" 
+                            muted class="resuview-vid"
+                            poster="images/thumbnail1.png"
+                            loop style="width: 100%;"> 
+                        </video>
+                    </div>
+
+                    <script> 
+                        let clip1 = document.querySelector(".resuview-vid") 
+                        //if desktop
+                        if (window.orientation != "undefined") {
+                            // play
+                            clip1.addEventListener("mouseover", function (e) { 
+                            clip1.play(); }) 
+                            // pause 
+                            clip1.addEventListener("mouseout", function (e) { 
+                            clip1.load(); }) 
+                        }
+                        //if mobile
+                        else{
+                            // play
+                            clip1.on("click touchstart", "video", function(){
+                            clip1.play();})
+                            // pause
+                            clip1.onended = function() {
+                            clip1.load();};
+                        }
+                    </script>
+
+                    <div class = "w3-row">
+                        <h4 class="skillList">MySQL</h4>
+                        <h4 class="skillList">Unity</h4>
+                        <h4 class="skillList">PHP</h4>
+                        <h4 class="skillList">HTML &amp CSS</h4>
+                    </div>
+
+
+                    <div class="w3-row">
+                        <h1>
+                            An AR environment that displays individuals' résumes next to their faces at networking events.
+                        </h1>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="w3-col l4 m12 s12 w3-margin-bottom">
+            <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
+                <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
+                    <div class="w3-row">
+                        <div class="w3-row" style="padding-top: 20px;">
+                            <div class="w3-col projectType l5 m4 s8" style="background-color: #064483;border-radius: 5px;text-align: center;
+                            font-weight: bold;color:#53a1ef;">Android Development</div>
+
+                            <div class="w3-col l4 m5 s1" style="color: transparent;">.</div>
+                            <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
+                                <p><a href="https://github.com/pearl-natalia/spave" 
+                                    class="w3-ripple w3-transparent" 
+                                    target="_blank" 
+                                    style="background-image: none;background-color: transparent;">
+                                    <i class="fa fa-share"></i></a></p>
+                            </div>
+                        </div>
+
+                        <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
+                            <h2>SPΛVE</h2>
+                        </div>
+                    </div>
                     
-                <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
-                    <h2>Résuview</h2>
-                </div>
+                    <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://play.google.com/store/apps/details?id=com.spave.spave&pcampaignid=web_share','_newtab');">  
+                        <video src= "videos/spaveVideo.mov"
+                            type="video/mp4" 
+                            muted class="spave-vid"
+                            poster="images/thumbnail2.png"
+                            loop style="width: 100%;"> 
+                        </video>
+                    </div>
 
-            </div>
+                    <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">  
+                        <video src= "videos/spaveVideo.mov"
+                            type="video/mp4" 
+                            muted class="spave-vid"
+                            poster="images/thumbnail2.png"
+                            loop style="width: 100%;"> 
+                        </video>
+                    </div>
 
-            <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop','_newtab');">
-                <video src= "videos/resuviewVideo.mp4"
-                    type="video/mp4" 
-                    muted class="resuview-vid"
-                    poster="images/thumbnail1.png"
-                    loop style="width: 100%;"> 
-                </video>
-            </div>
+                    <script> 
+                        let clip2 = document.querySelector(".spave-vid") 
+                        //if desktop
+                        if (window.orientation != "undefined") {
+                            // play
+                            clip2.addEventListener("mouseover", function (e) { 
+                            clip2.play(); }) 
+                            // pause 
+                            clip2.addEventListener("mouseout", function (e) { 
+                            clip2.load(); }) 
+                        }
+                        //if mobile
+                        else{ 
+                            // play
+                            clip2.on("click touchstart", "video", function(){
+                            clip2.play();})
+                            // pause
+                            clip2.onended = function() {
+                            clip2.load();};
+                        }
+                    </script>
 
-            <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">
-                <video src= "videos/resuviewVideo.mp4"
-                    type="video/mp4" 
-                    muted class="resuview-vid"
-                    poster="images/thumbnail1.png"
-                    loop style="width: 100%;"> 
-                </video>
-            </div>
+                    <div class = "w3-row">
+                        <h4 class="skillList">Android Studio</h4>
+                        <h4 class="skillList">Java</h4>
+                        <h4 class="skillList">HTML &amp CSS</h4>
+                        <h4 class="skillList">JavaScript</h4>
 
-            <script> 
-                let clip1 = document.querySelector(".resuview-vid") 
-                //if desktop
-                if (window.orientation != "undefined") {
-                    // play
-                    clip1.addEventListener("mouseover", function (e) { 
-                    clip1.play(); }) 
-                    // pause 
-                    clip1.addEventListener("mouseout", function (e) { 
-                    clip1.load(); }) 
-                }
-                //if mobile
-                else{
-                    // play
-                    clip1.on("click touchstart", "video", function(){
-                    clip1.play();})
-                    // pause
-                    clip1.onended = function() {
-                    clip1.load();};
-                }
-            </script>
+                    </div>
 
-            <div class = "w3-row">
-                <h4 class="skillList">MySQL</h4>
-                <h4 class="skillList">Unity</h4>
-                <h4 class="skillList">PHP</h4>
-                <h4 class="skillList">HTML &amp CSS</h4>
-            </div>
-
-
-            <div class="w3-row">
-                <h1>
-                    An AR environment that displays individuals' résumes next to their faces at networking events.
-                </h1>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l4 m12 s12 w3-margin-bottom">
-      <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-        <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-            <div class="w3-row">
-                <div class="w3-row" style="padding-top: 20px;">
-                    <div class="w3-col projectType l5 m4 s8" style="background-color: #064483;border-radius: 5px;text-align: center;
-                    font-weight: bold;color:#53a1ef;">Android Development</div>
-
-                    <div class="w3-col l4 m5 s1" style="color: transparent;">.</div>
-                    <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                        <p><a href="https://github.com/pearl-natalia/spave" 
-                            class="w3-ripple w3-transparent" 
-                            target="_blank" 
-                            style="background-image: none;background-color: transparent;">
-                            <i class="fa fa-share"></i></a></p>
+                    <div class="w3-row">
+                        <h1>
+                            A budgeting app to optimize user savings when shopping.<br>
+                            <span style="color: transparent;">.</span>
+                        </h1>
                     </div>
                 </div>
-
-                <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
-                    <h2>SPΛVE</h2>
-                </div>
-            </div>
-            
-            <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://play.google.com/store/apps/details?id=com.spave.spave&pcampaignid=web_share','_newtab');">  
-                <video src= "videos/spaveVideo.mov"
-                    type="video/mp4" 
-                    muted class="spave-vid"
-                    poster="images/thumbnail2.png"
-                    loop style="width: 100%;"> 
-                </video>
-            </div>
-
-            <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">  
-                <video src= "videos/spaveVideo.mov"
-                    type="video/mp4" 
-                    muted class="spave-vid"
-                    poster="images/thumbnail2.png"
-                    loop style="width: 100%;"> 
-                </video>
-            </div>
-
-            <script> 
-                let clip2 = document.querySelector(".spave-vid") 
-                //if desktop
-                if (window.orientation != "undefined") {
-                    // play
-                    clip2.addEventListener("mouseover", function (e) { 
-                    clip2.play(); }) 
-                    // pause 
-                    clip2.addEventListener("mouseout", function (e) { 
-                    clip2.load(); }) 
-                }
-                //if mobile
-                else{ 
-                    // play
-                    clip2.on("click touchstart", "video", function(){
-                    clip2.play();})
-                    // pause
-                    clip2.onended = function() {
-                    clip2.load();};
-                }
-            </script>
-
-            <div class = "w3-row">
-                <h4 class="skillList">Android Studio</h4>
-                <h4 class="skillList">Java</h4>
-                <h4 class="skillList">HTML &amp CSS</h4>
-                <h4 class="skillList">JavaScript</h4>
-
-            </div>
-
-            <div class="w3-row">
-                <h1>
-                    A budgeting app to optimize user savings when shopping.<br>
-                    <span style="color: transparent;">.</span>
-                </h1>
             </div>
         </div>
-      </div>
-    </div>
-    <div class="w3-col l4 m12 s12 w3-margin-bottom">
-      <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-        <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-            <div class="w3-row">
-                <div class="w3-row" style="padding-top: 20px;">
-                    <div class="w3-col projectType l3 m3 s6" style="background-color: #7a0a0a;border-radius: 5px;text-align: center;
-                    font-weight: bold;color:#df8383;">Robotics</div>
+        <div class="w3-col l4 m12 s12 w3-margin-bottom">
+            <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
+                <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
+                    <div class="w3-row">
+                        <div class="w3-row" style="padding-top: 20px;">
+                            <div class="w3-col projectType l3 m3 s6" style="background-color: #7a0a0a;border-radius: 5px;text-align: center;
+                            font-weight: bold;color:#df8383;">Robotics</div>
 
-                    <div class="w3-col l6 m6 s3" style="color: transparent;">.</div>
-                    <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                        <p><a href="https://devpost.com/software/handsfree-y7lsbq" 
-                            class="w3-ripple w3-transparent" 
-                            target="_blank" 
-                            style="background-image: none;background-color: transparent;">
-                            <i class="fa fa-share"></i></a></p>
+                            <div class="w3-col l6 m6 s3" style="color: transparent;">.</div>
+                            <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
+                                <p><a href="https://devpost.com/software/handsfree-y7lsbq" 
+                                    class="w3-ripple w3-transparent" 
+                                    target="_blank" 
+                                    style="background-image: none;background-color: transparent;">
+                                    <i class="fa fa-share"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%;">
+                            <h2>Autorithm</h2>
+                        </div>
+                    </div>
+
+                    <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://devpost.com/software/handsfree-y7lsbq');">
+                        <video src= "videos/autorithm.mp4"
+                            type="video/mp4" 
+                            muted class="autorithm-vid"
+                            poster="images/thumbnail3.png"
+                            loop style="width: 100%;"> 
+                        </video>
+                    </div>
+
+                    <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">
+                        <video src= "videos/autorithm.mp4"
+                            type="video/mp4" 
+                            muted class="autorithm-vid"
+                            poster="images/thumbnail3.png"
+                            loop style="width: 100%;"> 
+                        </video>
+                    </div>
+
+                    <script> 
+                        let clip3 = document.querySelector(".autorithm-vid") 
+                        //if desktop
+                        if (window.orientation != "undefined") {
+                            // play
+                            clip3.addEventListener("mouseover", function (e) { 
+                            clip3.play(); }) 
+                            // pause 
+                            clip3.addEventListener("mouseout", function (e) { 
+                            clip3.load(); }) 
+                        }
+                        //if mobile
+                        else{
+                            // play
+                            clip3.on("click touchstart", "video", function(){
+                            clip3.play();})
+                            // pause
+                            clip3.onended = function() {
+                            clip3.load();};
+                        }
+                    </script>
+
+                    <div class = "w3-row">
+                        <h4 class="skillList">EV3</h4>
+                        <h4 class="skillList">HTML &amp CSS</h4>
+                        <h4 class="skillList">Ultrasonic Sensors</h4>
+                        <h4 class="skillList">PHP</h4>
+                        <h4 class="skillList">C</h4>
+                    </div>
+
+                    <div class="w3-row">
+                        <h1>
+                            EV3 robot that automates food-package assembly, accompanied by a system to match volunteers with nearby pick-up locations.
+                        </h1>
                     </div>
                 </div>
-                <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%;">
-                    <h2>Autorithm</h2>
-                </div>
-            </div>
-
-            <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://devpost.com/software/handsfree-y7lsbq');">
-                <video src= "videos/autorithm.mp4"
-                    type="video/mp4" 
-                    muted class="autorithm-vid"
-                    poster="images/thumbnail3.png"
-                    loop style="width: 100%;"> 
-                </video>
-            </div>
-
-            <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">
-                <video src= "videos/autorithm.mp4"
-                    type="video/mp4" 
-                    muted class="autorithm-vid"
-                    poster="images/thumbnail3.png"
-                    loop style="width: 100%;"> 
-                </video>
-            </div>
-
-            <script> 
-                let clip3 = document.querySelector(".autorithm-vid") 
-                //if desktop
-                if (window.orientation != "undefined") {
-                    // play
-                    clip3.addEventListener("mouseover", function (e) { 
-                    clip3.play(); }) 
-                    // pause 
-                    clip3.addEventListener("mouseout", function (e) { 
-                    clip3.load(); }) 
-                }
-                //if mobile
-                else{
-                    // play
-                    clip3.on("click touchstart", "video", function(){
-                    clip3.play();})
-                    // pause
-                    clip3.onended = function() {
-                    clip3.load();};
-                }
-            </script>
-
-            <div class = "w3-row">
-                <h4 class="skillList">EV3</h4>
-                <h4 class="skillList">HTML &amp CSS</h4>
-                <h4 class="skillList">Ultrasonic Sensors</h4>
-                <h4 class="skillList">PHP</h4>
-                <h4 class="skillList">C</h4>
-            </div>
-
-            <div class="w3-row">
-                <h1>
-                    EV3 robot that automates food-package assembly, accompanied by a system to match volunteers with nearby pick-up locations.
-                </h1>
             </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="w3-col l4 m12 s12 w3-margin-bottom">
-    <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-      <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-          <div class="w3-row">
-              <div class="w3-row" style="padding-top: 20px;">
-                  <div class="w3-col projectType l5 m3 s6" style="background-color: #485434;border-radius: 5px;text-align: center;
-                  font-weight: bold;color: #88a063;">Web Development</div>
+    <div class="w3-row-padding" style="padding-top: 40px;">
+        <div class="w3-col l4 m12 s12 w3-margin-bottom">
+            <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
+                <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
+                    <div class="w3-row">
+                        <div class="w3-row" style="padding-top: 20px;">
+                            <div class="w3-col projectType l5 m3 s6" style="background-color: #485434;border-radius: 5px;text-align: center;
+                            font-weight: bold;color: #88a063;">Web Development</div>
 
-                  <div class="w3-col l4 m5 s1" style="color: transparent;">.</div>
-                  <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                      <p><a href="https://devpost.com/software/brainscape" 
-                          class="w3-ripple w3-transparent" 
-                          target="_blank" 
-                          style="background-image: none;background-color: transparent;">
-                          <i class="fa fa-share"></i></a></p>
-                  </div>
-              </div>
+                            <div class="w3-col l4 m5 s1" style="color: transparent;">.</div>
+                            <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
+                                <p><a href="https://devpost.com/software/brainscape" 
+                                    class="w3-ripple w3-transparent" 
+                                    target="_blank" 
+                                    style="background-image: none;background-color: transparent;">
+                                    <i class="fa fa-share"></i></a></p>
+                            </div>
+                        </div>
 
-              <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
-                  <h2>BrainScape</h2>
-              </div>
-          </div>
-          
-          <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://devpost.com/software/brainscape','_newtab');">  
-              <video src= "videos/brainScapeVideo.mp4"
-                  type="video/mp4" 
-                  muted class="spave-vid"
-                  poster="images/thumbnail4.png"
-                  loop style="width: 100%;"> 
-              </video>
-          </div>
+                        <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
+                            <h2>BrainScape</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://devpost.com/software/brainscape','_newtab');">  
+                        <video src= "videos/brainScapeVideo.mp4"
+                            type="video/mp4" 
+                            muted class="spave-vid"
+                            poster="images/thumbnail4.png"
+                            loop style="width: 100%;"> 
+                        </video>
+                    </div>
 
-          <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">  
-              <video src= "videos/brainScapeVideo.mp4"
-                  type="video/mp4" 
-                  muted class="brainScape-vid"
-                  poster="images/thumbnail4.png"
-                  loop style="width: 100%;"> 
-              </video>
-          </div>
+                    <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">  
+                        <video src= "videos/brainScapeVideo.mp4"
+                            type="video/mp4" 
+                            muted class="brainScape-vid"
+                            poster="images/thumbnail4.png"
+                            loop style="width: 100%;"> 
+                        </video>
+                    </div>
 
-          <script> 
-              let clip4 = document.querySelector(".brainScape-vid") 
-              //if desktop
-              if (window.orientation != "undefined") {
-                  // play
-                  clip4.addEventListener("mouseover", function (e) { 
-                  clip4.play(); }) 
-                  // pause 
-                  clip4.addEventListener("mouseout", function (e) { 
-                  clip4.load(); }) 
-              }
-              //if mobile
-              else{ 
-                  // play
-                  clip4.on("click touchstart", "video", function(){
-                  clip4.play();})
-                  // pause
-                  clip4.onended = function() {
-                  clip4.load();};
-              }
-          </script>
+                    <script> 
+                        let clip4 = document.querySelector(".brainScape-vid") 
+                        //if desktop
+                        if (window.orientation != "undefined") {
+                            // play
+                            clip4.addEventListener("mouseover", function (e) { 
+                            clip4.play(); }) 
+                            // pause 
+                            clip4.addEventListener("mouseout", function (e) { 
+                            clip4.load(); }) 
+                        }
+                        //if mobile
+                        else{ 
+                            // play
+                            clip4.on("click touchstart", "video", function(){
+                            clip4.play();})
+                            // pause
+                            clip4.onended = function() {
+                            clip4.load();};
+                        }
+                    </script>
 
-          <div class = "w3-row">
-            <h4 class="skillList">HTML &amp CSS</h4>
-            <h4 class="skillList">JavaScript</h4>
-          </div>
+                    <div class = "w3-row">
+                        <h4 class="skillList">HTML &amp CSS</h4>
+                        <h4 class="skillList">JavaScript</h4>
+                    </div>
 
-          <div class="w3-row">
-              <h1>
-                An virtual platform where students can study with each other in simulated environments.
-              </h1>
-          </div>
-      </div>
-    </div>
-  </div>
-    <div class="w3-col l4 m12 s12 w3-margin-bottom">
-      <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-        <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-            <div class="w3-row">
-                <div class="w3-row" style="padding-top: 20px;">
-                    <div class="w3-col projectType l5 m3 s6" style="background-color: #7a0a0a;border-radius: 5px;text-align: center;
-                    font-weight: bold;color:#df8383;">Game Development</div>
-
-                    <div class="w3-col l4 m6 s3" style="color: transparent;">.</div>
-                    <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                        <p><a href="https://github.com/pearl-natalia/super-mario-bros" 
-                            class="w3-ripple w3-transparent" 
-                            target="_blank" 
-                            style="background-image: none;background-color: transparent;">
-                            <i class="fa fa-share"></i></a></p>
+                    <div class="w3-row">
+                        <h1>
+                            An virtual platform where students can study with each other in simulated environments.
+                        </h1>
                     </div>
                 </div>
-
-                <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
-                    <h2>Super Mario Bros</h2>
-                </div>
-            </div>
-            
-            <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://play.google.com/store/apps/details?id=com.spave.spave&pcampaignid=web_share','_newtab');">  
-                <video src= "videos/spaveVideo.mov"
-                    type="video/mp4" 
-                    muted class="spave-vid"
-                    poster="images/thumbnail5.png"
-                    loop style="width: 100%;"> 
-                </video>
-            </div>
-
-            <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">  
-                <video src= "videos/spaveVideo.mov"
-                    type="video/mp4" 
-                    muted class="spave-vid"
-                    poster="images/thumbnail5.png"
-                    loop style="width: 100%;"> 
-                </video>
-            </div>
-
-            <script> 
-                let clip5 = document.querySelector(".spave-vid") 
-                //if desktop
-                if (window.orientation != "undefined") {
-                    // play
-                    clip5.addEventListener("mouseover", function (e) { 
-                    clip5.play(); }) 
-                    // pause 
-                    clip5.addEventListener("mouseout", function (e) { 
-                    clip5.load(); }) 
-                }
-                //if mobile
-                else{ 
-                    // play
-                    clip5.on("click touchstart", "video", function(){
-                    clip5.play();})
-                    // pause
-                    clip5.onended = function() {
-                    clip5.load();};
-                }
-            </script>
-
-            <div class = "w3-row">
-                <h4 class="skillList">Python</h4>
-            </div>
-
-            <div class="w3-row">
-                <h1>
-                    An interactive replication of a Super Mario Bros game level.<br>
-                    <span style="color: transparent;">.</span>
-                </h1>
             </div>
         </div>
-      </div>
-    </div>
-    <div class="w3-col l4 m12 s12 w3-margin-bottom">
-      <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-        <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-            <div class="w3-row">
-                <div class="w3-row" style="padding-top: 20px;">
-                    <div class="w3-col projectType l5 m3 s6" style="background-color: #390d98;border-radius: 5px;text-align: center;
-                    font-weight: bold;color:#9570e6;">Game Development</div>
+        <div class="w3-col l4 m12 s12 w3-margin-bottom">
+            <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
+                <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
+                    <div class="w3-row">
+                        <div class="w3-row" style="padding-top: 20px;">
+                            <div class="w3-col projectType l5 m3 s6" style="background-color: #7a0a0a;border-radius: 5px;text-align: center;
+                            font-weight: bold;color:#df8383;">Game Development</div>
 
-                    <div class="w3-col l4 m6 s3" style="color: transparent;">.</div>
-                    <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                        <p><a href="https://github.com/pearl-natalia/game-of-life" 
-                            class="w3-ripple w3-transparent" 
-                            target="_blank" 
-                            style="background-image: none;background-color: transparent;">
-                            <i class="fa fa-share"></i></a></p>
+                            <div class="w3-col l4 m6 s3" style="color: transparent;">.</div>
+                            <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
+                                <p><a href="https://github.com/pearl-natalia/super-mario-bros" 
+                                    class="w3-ripple w3-transparent" 
+                                    target="_blank" 
+                                    style="background-image: none;background-color: transparent;">
+                                    <i class="fa fa-share"></i></a></p>
+                            </div>
+                        </div>
+
+                        <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
+                            <h2>Super Mario Bros</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://play.google.com/store/apps/details?id=com.spave.spave&pcampaignid=web_share','_newtab');">  
+                        <video src= "videos/spaveVideo.mov"
+                            type="video/mp4" 
+                            muted class="spave-vid"
+                            poster="images/thumbnail5.png"
+                            loop style="width: 100%;"> 
+                        </video>
+                    </div>
+
+                    <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">  
+                        <video src= "videos/spaveVideo.mov"
+                            type="video/mp4" 
+                            muted class="spave-vid"
+                            poster="images/thumbnail5.png"
+                            loop style="width: 100%;"> 
+                        </video>
+                    </div>
+
+                    <script> 
+                        let clip5 = document.querySelector(".spave-vid") 
+                        //if desktop
+                        if (window.orientation != "undefined") {
+                            // play
+                            clip5.addEventListener("mouseover", function (e) { 
+                            clip5.play(); }) 
+                            // pause 
+                            clip5.addEventListener("mouseout", function (e) { 
+                            clip5.load(); }) 
+                        }
+                        //if mobile
+                        else{ 
+                            // play
+                            clip5.on("click touchstart", "video", function(){
+                            clip5.play();})
+                            // pause
+                            clip5.onended = function() {
+                            clip5.load();};
+                        }
+                    </script>
+
+                    <div class = "w3-row">
+                        <h4 class="skillList">Python</h4>
+                    </div>
+
+                    <div class="w3-row">
+                        <h1>
+                            An interactive replication of a Super Mario Bros game level.<br>
+                            <span style="color: transparent;">.</span>
+                        </h1>
                     </div>
                 </div>
-                <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%;">
-                    <h2>Game of Life</h2>
-                </div>
-            </div>
-
-            <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://devpost.com/software/handsfree-y7lsbq');">
-                <video src= "videos/autorithm.mp4"
-                    type="video/mp4" 
-                    muted class="autorithm-vid"
-                    poster="images/thumbnail6.png"
-                    loop style="width: 100%;"> 
-                </video>
-            </div>
-
-            <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">
-                <video src= "videos/autorithm.mp4"
-                    type="video/mp4" 
-                    muted class="autorithm-vid"
-                    poster="images/thumbnail6.png"
-                    loop style="width: 100%;"> 
-                </video>
-            </div>
-
-            <script> 
-                let clip6 = document.querySelector(".autorithm-vid") 
-                //if desktop
-                if (window.orientation != "undefined") {
-                    // play
-                    clip6.addEventListener("mouseover", function (e) { 
-                    clip6.play(); }) 
-                    // pause 
-                    clip6.addEventListener("mouseout", function (e) { 
-                    clip6.load(); }) 
-                }
-                //if mobile
-                else{
-                    // play
-                    clip6.on("click touchstart", "video", function(){
-                    clip6.play();})
-                    // pause
-                    clip6.onended = function() {
-                    clip6.load();};
-                }
-            </script>
-
-            <div class = "w3-row">
-                <h4 class="skillList">Python</h4>
-            </div>
-
-            <div class="w3-row">
-                <h1>
-                    A text-only version of the board game, The Game of Life.<br><br>
-                </h1>
             </div>
         </div>
-      </div>
+        <div class="w3-col l4 m12 s12 w3-margin-bottom">
+            <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
+                <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
+                    <div class="w3-row">
+                        <div class="w3-row" style="padding-top: 20px;">
+                            <div class="w3-col projectType l5 m3 s6" style="background-color: #390d98;border-radius: 5px;text-align: center;
+                            font-weight: bold;color:#9570e6;">Game Development</div>
+
+                            <div class="w3-col l4 m6 s3" style="color: transparent;">.</div>
+                            <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
+                                <p><a href="https://github.com/pearl-natalia/game-of-life" 
+                                    class="w3-ripple w3-transparent" 
+                                    target="_blank" 
+                                    style="background-image: none;background-color: transparent;">
+                                    <i class="fa fa-share"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%;">
+                            <h2>Game of Life</h2>
+                        </div>
+                    </div>
+
+                    <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://devpost.com/software/handsfree-y7lsbq');">
+                        <video src= "videos/autorithm.mp4"
+                            type="video/mp4" 
+                            muted class="autorithm-vid"
+                            poster="images/thumbnail6.png"
+                            loop style="width: 100%;"> 
+                        </video>
+                    </div>
+
+                    <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">
+                        <video src= "videos/autorithm.mp4"
+                            type="video/mp4" 
+                            muted class="autorithm-vid"
+                            poster="images/thumbnail6.png"
+                            loop style="width: 100%;"> 
+                        </video>
+                    </div>
+
+                    <script> 
+                        let clip6 = document.querySelector(".autorithm-vid") 
+                        //if desktop
+                        if (window.orientation != "undefined") {
+                            // play
+                            clip6.addEventListener("mouseover", function (e) { 
+                            clip6.play(); }) 
+                            // pause 
+                            clip6.addEventListener("mouseout", function (e) { 
+                            clip6.load(); }) 
+                        }
+                        //if mobile
+                        else{
+                            // play
+                            clip6.on("click touchstart", "video", function(){
+                            clip6.play();})
+                            // pause
+                            clip6.onended = function() {
+                            clip6.load();};
+                        }
+                    </script>
+
+                    <div class = "w3-row">
+                        <h4 class="skillList">Python</h4>
+                    </div>
+
+                    <div class="w3-row">
+                        <h1>
+                            A text-only version of the board game, The Game of Life.<br><br>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 </div>
 
 <!-- work experience better -->
@@ -809,7 +807,7 @@
       <a href="mailto:pnatalia@uwaterloo.ca" class="fa fa-envelope w3-hover-opacity" style="text-decoration: none;"></a>
       <a href="https://linkedin.com/in/pearlnatalia" class="fa fa-linkedin w3-hover-opacity" target="_blank" style="text-decoration: none;"></a>
       <a href="https://github.com/pearl-natalia" class="fa fa-github w3-hover-opacity" target="_blank" style="text-decoration: none;"></a>
-</div>
+    </div>
 </footer>
 
 <!-- ending tag for afterzoom div -->
