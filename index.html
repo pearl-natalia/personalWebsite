@@ -358,86 +358,82 @@
       </div>
     </div>
   </div>
-  
-<div class="w3-row-padding" style="padding-top: 5px;">
-    <div class="w3-col l4 m12 s12 w3-margin-bottom">
-      <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-        <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-            <div class="w3-row">
-                <div class="w3-row" style="padding-top: 20px;">
-                    <div class="w3-col projectType l4 m3 s7" style="background-color: #485434;;border-radius: 5px;text-align: center;
-                    font-weight: bold;color: #88a063;">Web Development</div>
+  <div class="w3-col l4 m12 s12 w3-margin-bottom">
+    <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
+      <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
+          <div class="w3-row">
+              <div class="w3-row" style="padding-top: 20px;">
+                  <div class="w3-col projectType l5 m3 s6" style="background-color: #485434;border-radius: 5px;text-align: center;
+                  font-weight: bold;color: #88a063;">Web Development</div>
 
-                    <div class="w3-col l5 m6 s2" style="color: transparent;">.</div>
-                    <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                        <p><a href="https://devpost.com/software/brainscape" 
-                            class="w3-ripple w3-transparent" 
-                            target="_blank" 
-                            style="background-image: none;background-color: transparent;">
-                            <i class="fa fa-share"></i></a></p>
-                    </div>
-                </div>
-                    
-                <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
-                    <h2>BrainScape</h2>
-                </div>
+                  <div class="w3-col l4 m5 s1" style="color: transparent;">.</div>
+                  <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
+                      <p><a href="https://github.com/pearl-natalia/super-mario-bros" 
+                          class="w3-ripple w3-transparent" 
+                          target="_blank" 
+                          style="background-image: none;background-color: transparent;">
+                          <i class="fa fa-share"></i></a></p>
+                  </div>
+              </div>
 
-            </div>
+              <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
+                  <h2>BrainScape</h2>
+              </div>
+          </div>
+          
+          <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://play.google.com/store/apps/details?id=com.spave.spave&pcampaignid=web_share','_newtab');">  
+              <video src= "videos/spaveVideo.mov"
+                  type="video/mp4" 
+                  muted class="spave-vid"
+                  poster="images/thumbnail4.png"
+                  loop style="width: 100%;"> 
+              </video>
+          </div>
 
-            <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop','_newtab');">
-                <video src= "videos/brainScapeVideo.mp4"
-                    type="video/mp4" 
-                    muted class="brainscape-vid"
-                    poster="images/thumbnail4.png"
-                    loop style="width: 100%;"> 
-                </video>
-            </div>
+          <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">  
+              <video src= "videos/spaveVideo.mov"
+                  type="video/mp4" 
+                  muted class="spave-vid"
+                  poster="images/thumbnail4.png"
+                  loop style="width: 100%;"> 
+              </video>
+          </div>
 
-            <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">
-                <video src= "videos/brainScapeVideo.mp4"
-                    type="video/mp4" 
-                    muted class="brainscape-vid"
-                    poster="images/thumbnail4.png"
-                    loop style="width: 100%;"> 
-                </video>
-            </div>
+          <script> 
+              let clip4 = document.querySelector(".spave-vid") 
+              //if desktop
+              if (window.orientation != "undefined") {
+                  // play
+                  clip4.addEventListener("mouseover", function (e) { 
+                  clip4.play(); }) 
+                  // pause 
+                  clip4.addEventListener("mouseout", function (e) { 
+                  clip4.load(); }) 
+              }
+              //if mobile
+              else{ 
+                  // play
+                  clip4.on("click touchstart", "video", function(){
+                  clip4.play();})
+                  // pause
+                  clip4.onended = function() {
+                  clip4.load();};
+              }
+          </script>
 
-            <script> 
-                let clip4 = document.querySelector(".brainscape-vid") 
-                //if desktop
-                if (window.orientation != "undefined") {
-                    // play
-                    clip4.addEventListener("mouseover", function (e) { 
-                    clip4.play(); }) 
-                    // pause 
-                    clip4.addEventListener("mouseout", function (e) { 
-                    clip4.load(); }) 
-                }
-                //if mobile
-                else{
-                    // play
-                    clip4.on("click touchstart", "video", function(){
-                    clip4.play();})
-                    // pause
-                    clip4.onended = function() {
-                    clip4.load();};
-                }
-            </script>
+          <div class = "w3-row">
+            <h4 class="skillList">HTML &amp CSS</h4>
+            <h4 class="skillList">JavaScript</h4>
+          </div>
 
-            <div class = "w3-row">
-                <h4 class="skillList">HTML &amp CSS</h4>
-                <h4 class="skillList">JavaScript</h4>
-            </div>
-
-
-            <div class="w3-row">
-                <h1>
-                    An virtual platform where students can study with each other in simulated environments.
-                </h1>
-            </div>
-        </div>
+          <div class="w3-row">
+              <h1>
+                An virtual platform where students can study with each other in simulated environments.
+              </h1>
+          </div>
       </div>
     </div>
+  </div>
     <div class="w3-col l4 m12 s12 w3-margin-bottom">
       <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
         <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
