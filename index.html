@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Pearl Natalia</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,803 +17,638 @@
     <meta property="og:url" content="http://pearlnatalia.com" />
     <meta property="og:image:url" content="images/linkCover.png" />
     <meta property="og:description" content="Pearl Nataia is a software engineer at the University of Waterloo" />
+    <!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen">    -->
 
     <!-- animation -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-       AOS.init();
-       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
-       crossorigin="anonymous"
+        AOS.init();
+        src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity = "sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin = "anonymous"
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+    <!-- carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+    <style>
+        .swiper-container {
+            box-sizing: border-box;
+            width: 100vw;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        @media (min-width: 1025px) {
+            .swiper-slide {
+                height: 70vh;
+                width: 50vw;
+            }
+            .swiper-container {height:70vh}
+
+            .swiper-pagination-bullet {
+                width: 9px;
+                height: 9px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .swiper-slide {
+                height: 60vw;
+                width: 60vw;
+            }
+            .swiper-container {height:60vw}
+
+
+            .swiper-pagination-bullet {
+                width: 9px;
+                height: 9px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .swiper-slide {
+                height: 80vw;
+                width: 70vw;
+            }
+            .swiper-container {height:80vw}
+
+
+            .swiper-pagination-bullet {
+                width: 6px;
+                height: 6px;
+            }
+        }
+
+        .swiper-pagination {
+            position: relative;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .swiper-pagination-bullet {
+            background-color: rgb(108, 108, 108);
+            opacity: 0.5;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background-color: rgb(152, 150, 150);
+
+        }
+    </style>
 </head>
+
 <body>
 
-<!-- Introduction Section -->
-<div class="w3-row zoom l12 m12 s12"> 
-    <div class="fade">  
-        <div class="w3-row nameDivPadding1" style="color: transparent;">.
-            <!-- <img class="w3-image nameLogo" src="images/nameLogo.png" style="height:10vh;width: 10vh;position: absolute;top:2vw;right:2vw;"> -->
-        </div>    
-        <div class="w3-row nameDivPadding2 w3-text-white">
-            <span class="w3-large nameDiv" data-aos="fade-in" data-aos-duration="1500"><h5>
-                I'm 
-                <span style="color: #ffffff;font-weight: bold;">
-                    Pearl Natalia.
-                </span></h5>
-            </span>
-            
-            <span class="w3-large nameDiv w3-medium w3-hide-small" style="margin-top: -7%;"><p>
-                Software Engineering @ UWaterloo &ensp;|&ensp; Full-Stack Developer &ensp;|&ensp; Building BrainScape</p></span> 
+    <!-- Introduction Section -->
+    <div class="w3-row zoom l12 m12 s12">
+        <div class="fade">
+            <div class="w3-row nameDivPadding1" style="color: transparent;">.
+                <!-- <img class="w3-image nameLogo" src="images/nameLogo.png" style="height:10vh;width: 10vh;position: absolute;top:2vw;right:2vw;"> -->
+            </div>
+            <div class="w3-row nameDivPadding2 w3-text-white">
+                <span class="w3-large nameDiv" data-aos="fade-in" data-aos-duration="1500">
+                    <h5>
+                        I'm
+                        <span style="color: #ffffff;font-weight: 500;">
+                            Pearl Natalia.
+                        </span>
+                    </h5>
+                </span>
 
-            <span class="w3-hide-large nameDiv w3-hide-medium w3-small" style="margin-top: -7%;"><p>
-                Software Engineering @ UWaterloo<br>Full-Stack Developer<br>Building BrainScape</p></span>
+                <span class="w3-large nameDiv w3-medium w3-hide-small" style="margin-top: -7%;">
+                    <p>
+                        Software Engineering @ UWaterloo &ensp;|&ensp; Full-Stack Developer &ensp;|&ensp; Building
+                        BrainScape</p>
+                </span>
+
+                <span class="w3-hide-large nameDiv w3-hide-medium w3-small" style="margin-top: -7%;">
+                    <p>
+                        Software Engineering @ UWaterloo<br>Full-Stack Developer<br>Building BrainScape</p>
+                </span>
+
+                <div class="w3-row l12 m12 w3-hide-small icons" style="padding:2px;height:50px">
+                    <a href="mailto:pnatalia@uwaterloo.ca" class="fa fa-envelope w3-hover-opacity"
+                        style="text-decoration: none;padding:5px;"></a>
+                    <a href="https://linkedin.com/in/pearlnatalia" class="fa fa-linkedin w3-hover-opacity"
+                        target="_blank" style="text-decoration: none;padding:5px"></a>
+                    <a href="https://github.com/pearl-natalia" class="fab fa-github w3-hover-opacity" target="_blank"
+                        style="text-decoration: none;padding:5px"></a>
+                    <a href="https://se-webring.xyz/" class="fas fa-user-graduate w3-hover-opacity" target="_blank"
+                        style="text-decoration: none;padding:5px"></a>
+                </div>
+                <div class="w3-row w3-hide-large w3-hide-medium s12" style="padding:2px;height:50px">
+                    <a href="mailto:pnatalia@uwaterloo.ca" class="fa fa-envelope w3-hover-opacity"
+                        style="text-decoration: none;padding:5px;"></a>
+                    <a href="https://linkedin.com/in/pearlnatalia" class="fa fa-linkedin w3-hover-opacity"
+                        target="_blank" style="text-decoration: none;padding:5px"></a>
+                    <a href="https://github.com/pearl-natalia" class="fab fa-github w3-hover-opacity" target="_blank"
+                        style="text-decoration: none;padding:5px"></a>
+                    <a href="https://se-webring.xyz/" class="fas fa-user-graduate w3-hover-opacity" target="_blank"
+                        style="text-decoration: none;padding:5px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row afterzoom l12 m12 s12">
+        <!-- new about section -->
+        <div class="w3-container aboutContainer"
+            style="width: 100vw;margin: 0;padding-left: 0;padding-right: 0;margin-top: 0;">
+            <div class="w3-row aboutMe" style="width: 100vw;">
+                <div class="w3-col abt1" style="height:100%;">
+                    <p id="text1" style="padding-left: 5%;padding-right: 5%;">Built BrainScape @ UWestern's SheHacks+
+                        hackathon</p>
+                </div>
+                <div class="w3-col abt2-0" style="height:100%;">
+                    <p id="text2-0" style="padding-left: 5%;padding-right: 5%;">Canoed through Lake Louise</p>
+                </div>
+                <div class="w3-col abt2" style="height:100%;">
+                    <p id="text2" style="padding-left: 5%;padding-right: 5%;">Chairwoman of McMichael Canadian<br>Art
+                        Collection's Volunteer Committee</p>
+                </div>
+                <div class="w3-col abt2-1" style="height:100%;">
+                </div>
+            </div>
+
+            <div class="w3-row aboutMe2" style="width: 100vw;">
+                <div class="w3-col abt3" style="height:100%;">
+                    <p id="text3" style="padding-left: 5%;padding-right: 5%;width:80%">Built Autorithm @ Waterloo's
+                        Women in Engineering Hackathon </p>
+                </div>
+                <div class="w3-col textMe" style="height:100%;text-align: justify;">
+                    <h3>About Me</h3>
+                    <h1>
+                        I'm a full-stack developer based in Toronto with an avid interest in Android and web
+                        development.
+                        Currently, I'm building BrainScape, a virtual platform where students can study together
+                        anytime, anywhere.
+                        Other than that, I enjoy playing ping pong and the piano.
+                    </h1>
+                </div>
+                <div class="w3-col abt4" style="height:100%;">
+                    <p id="text4" style="padding-left: 5%;padding-right: 5%;">NCWIT 2023 Ontario Recipient</p>
+                </div>
+            </div>
+
+            <div class="w3-row aboutMe" style="width: 100vw;">
+                <div class="w3-col abt5" style="height:100%;">
+                    <p id="text5" style="padding-left: 5%;padding-right: 5%;">Bungee jumped off a 160ft bridge in BC</p>
+                </div>
+                <div class="w3-col abt6" style="height:100%;">
+                    <p id="text6" style="padding-left: 5%;padding-right: 5%;">Built an AR platform<br>from scratch</p>
+                </div>
+                <div class="w3-col abt7" style="height:100%;">
+                    <p id="text7" style="padding-left: 10%;padding-right: 10%;">Hosted various networking events for
+                        UWaterloo students</p>
+                </div>
+                <div class="w3-col abt8" style="height:100%;">
+                    <p id="text8" style="padding-left: 10%;padding-right: 10%;">Collaborated with Tesla to host an
+                        information &amp networking session</p>
+                </div>
+                <div class="w3-col abt9" style="height:100%;">
+                </div>
+            </div>
+        </div>
+        <!-- flower -->
+        <!-- <div class="w3-col m8 l8 w3-hide-small"
+            style="display: flex;justify-content: flex-end;align-items: flex-start;transform: translate(60px);">
+            <img class="w3-image flowerImage" src="images/flower.png" style="color:#111111;">
+        </div>
+        <div class="w3-col m4 l4 w3-hide-small" style="color: transparent;">.</div> -->
+
+        <!-- <div class="w3-col s12 w3-hide-large w3-hide-medium">
+      <img class="w3-image flowerImage" src="images/flower.png" style="margin-left:0;color: #111111; text-align: center;padding-top:20px;width: 130%">
+        </div> -->
+
+        <!-- Projects Section -->
+        <div class="w3-container project-div" style="padding-top:200px; padding-bottom: 30px;" id="team">
+            <h3 class="w3-center" style="color: white;">My Projects</h3>
+        </div>
+
+        <!-- temp carousel -->
+        <div class="swiper-container" id="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img class="w3-image" src="images/thumbnail2.png" style = "border-radius: 5px">
+                    <div class="w3-row" style="padding-top: 20px;">
+                        <h1 style="font-weight: bold !important;">SPΛVE - Android Development</h1>
+                        <h1 style="color: #827f7f;">A budgeting app to optimize user savings when shopping.</h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="w3-image" src="images/thumbnail1.png" style = "border-radius: 5px">
+                    <div class="w3-row" style="padding-top: 20px;">
+                        <h1 style="font-weight: bold !important;">Résuview - Augmented Reality</h1>
+                        <h1 style="color: #827f7f;">An AR environment that displays individuals' résumes next to their faces.</h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="w3-image" src="images/thumbnail3.png" style = "border-radius: 5px">
+                    <div class="w3-row" style="padding-top: 20px;">
+                        <h1 style="font-weight: bold !important;">Autorithm - Robotics</h1>
+                        <h1 style="color: #827f7f;">EV3 robot that automates food-package assembly.</h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="w3-image" src="images/thumbnail4.png" style = "border-radius: 5px">
+                    <div class="w3-row" style="padding-top: 20px;">
+                        <h1 style="font-weight: bold !important;">BrainScape - Web Development</h1>
+                        <h1 style="color: #827f7f;">A virtual platform for students to study together in simulated environments.</h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="w3-image" src="images/thumbnail5.png" style = "border-radius: 5px">
+                    <div class="w3-row" style="padding-top: 20px;">
+                        <h1 style="font-weight: bold !important;">Super Mario Bros - Game Development</h1>
+                        <h1 style="color: #827f7f;">An interactive replication of a Super Mario Bros game.</h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="w3-image" src="images/thumbnail6.png" style = "border-radius: 5px">
+                    <div class="w3-row" style="padding-top: 20px;">
+                        <h1 style="font-weight: bold !important;">The Game of Life - Game Development</h1>
+                        <h1 style="color: #827f7f;">A text-only version of the board game.</h1>
+                    </div>
+                </div>
+
                 
-            <div class="w3-row l12 m12 w3-hide-small icons" style="padding:2px;height:50px">
-                <a href="mailto:pnatalia@uwaterloo.ca" class="fa fa-envelope w3-hover-opacity" style="text-decoration: none;padding:5px;"></a>
-                <a href="https://linkedin.com/in/pearlnatalia" class="fa fa-linkedin w3-hover-opacity" target="_blank" style="text-decoration: none;padding:5px"></a>
-                <a href="https://github.com/pearl-natalia" class="fab fa-github w3-hover-opacity" target="_blank" style="text-decoration: none;padding:5px"></a>
-                <a href="https://se-webring.xyz/" class="fas fa-user-graduate w3-hover-opacity" target="_blank" style="text-decoration: none;padding:5px"></a>
+
             </div>
-            <div class="w3-row w3-hide-large w3-hide-medium s12" style="padding:2px;height:50px">
-                <a href="mailto:pnatalia@uwaterloo.ca" class="fa fa-envelope w3-hover-opacity" style="text-decoration: none;padding:5px;"></a>
-                <a href="https://linkedin.com/in/pearlnatalia" class="fa fa-linkedin w3-hover-opacity" target="_blank" style="text-decoration: none;padding:5px"></a>
-                <a href="https://github.com/pearl-natalia" class="fab fa-github w3-hover-opacity" target="_blank" style="text-decoration: none;padding:5px"></a>
-                <a href="https://se-webring.xyz/" class="fas fa-user-graduate w3-hover-opacity" target="_blank" style="text-decoration: none;padding:5px"></a>
+        </div>
+        <div class="swiper-pagination" style="padding-top: 40px;"></div>
+
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+        
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                speed: 500,
+                coverflow: {
+                    rotate: 20,
+                    stretch: 0,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                loop: false,
+                direction: 'horizontal',
+                touch: true, // Enable touch
+                mousewheel: false,
+                allowTouchMove: true,
+                initialSlide: 1,
+                touchMoveStopPropagation: true,
+        
+                // Add the following callback
+                on: {
+                    slideChangeTransitionStart: function () {
+                        var slides = this.slides;
+        
+                        // Remove darker overlay from all slides
+                        for (var i = 0; i < slides.length; i++) {
+                            slides[i].classList.remove('darker-overlay');
+                        }
+        
+                        // Add darker overlay to non-centered slides
+                        var centeredIndex = Math.floor(slides.length / 2);
+                        for (var j = 0; j < slides.length; j++) {
+                            if (j !== centeredIndex) {
+                                slides[j].classList.add('darker-overlay');
+                            }
+                        }
+                    }
+                }
+            });
+        
+            var isSwiping = false; // Flag to track swipe status
+            var lastSlideIndex = swiper.activeIndex; // Store the index of the last slide
+        
+            swiper.on('touchStart', function () {
+                isSwiping = true; // Swipe is in progress
+                lastSlideIndex = swiper.activeIndex; // Store the index of the current slide
+            });
+        
+            swiper.on('touchEnd', function () {
+                if (isSwiping) {
+                    // Determine swipe direction
+                    var diff = swiper.touches.diff;
+                    var direction = diff > 0 ? 'next' : 'prev';
+        
+                    // Check if the slide has changed in the desired direction
+                    if ((direction === 'next' && swiper.activeIndex > lastSlideIndex) ||
+                        (direction === 'prev' && swiper.activeIndex < lastSlideIndex)) {
+                        swiper.slideTo(lastSlideIndex); // Reset to the last slide
+                    }
+        
+                    isSwiping = false; // Reset swipe status
+                }
+            });
+        
+            var swiperContainer = document.getElementById('swiper-container');
+            swiperContainer.addEventListener('mouseenter', function () {
+                swiper.mousewheel.enable(); // Enable mousewheel when mouse enters the container
+            });
+        
+            swiperContainer.addEventListener('mouseleave', function () {
+                swiper.mousewheel.disable(); // Disable mousewheel when mouse leaves the container
+            });
+
+                            
+        </script>
+
+        <!-- work experience better -->
+        <div class="w3-container work-div" style="padding:16px 16px;" id="work">
+            <div class="w3-row-padding w3-hide-medium w3-hide-small" style="padding-bottom:50px;">
+                <h3 class="w3-center experienceTitle"
+                    style="float:center;background-color: #90ee9000;color: #ffffff;padding-top: 100px;">My Experience
+                </h3>
             </div>
-        </div>  
-    </div>
-</div>
 
-<!-- About Me Section -->
-<div class="w3-row afterzoom l12 m12 s12">
-<div class="w3-container about-div" style="padding-bottom: 20px;padding-top: 120px;">
-  <div class="w3-row-padding aboutMe">
-     <div class = "w3-col l3 w3-hide-small w3-hide-medium" style="color:black;">.</div>
-    <div class="w3-col l3 w3-hide-small w3-hide-medium">
-    <h3><span style="font-weight: bold;">About Me</span></h3>
-      <p><span style="text-align: center;display: flex;padding-top: 25px;padding-left: 20px;padding-right:20px;">
-        I'm a full-stack developer based in Toronto with an avid interest in Android and web development.
-        Currently, I'm building BrainScape, a virtual platform where students can study together anytime, anywhere.
-        Other than that, I enjoy playing ping pong and the piano. 
-        </span></p>
-    </div>
-    <div class="w3-col l3 w3-hide-small w3-hide-medium" style="padding-top: 40px;">
-        <img class="w3-image" src="images/profile.png" style="border-radius:50%;margin-left:-1%;height:30vh;width: 30vh;">
-    </div>
-    <div class = "w3-col l3 w3-hide-small w3-hide-medium" style="color: black;">.</div>
+            <div class="w3-row-padding w3-hide-large" style="padding-bottom: 25px;">
+                <h3 class="w3-center experienceTitle"
+                    style="float:center;background-color: #90ee9000;color: #ffffff;">My Experience
+                </h3>
+            </div>
+            <div class="w3-container experiences">
+                <div class="w3-row">
+                    <div class="w3-col w3-padding l6 m12 s12">
+                        <div class="w3-col l2 w3-hide-medium w3-hide-small"
+                            style="padding-top: 25px;display: flex;justify-content: center;align-items: center;">
+                            <img class="w3-image logo" src="images/realityLabsLogo.png" style="border-radius: 8px;">
+                        </div>
+                        <div class="w3-col s2 m2 w3-hide-large"
+                            style="padding-top: 25px;display: flex;justify-content: center;align-items: center;">
+                            <img class="w3-image logo" src="images/realityLabsLogo.png"
+                                style="margin-left:0;border-radius: 8px;">
+                        </div>
+                        <div class="w3-col l10 m10 s10">
+                            <div class="w3-row">
+                                <p><span style="font-weight: 300; padding-left: 12px;color: white;">
+                                        Director of Technology<br>
 
-    <div class = "w3-col m2 w3-hide-small w3-hide-large" style="color: black;">.</div>
-    <div class="w3-col m8 w3-hide-small w3-hide-large">
-        <h3><span style="font-weight: bold;">About Me</span></h3>
-        <p><span style="text-align: center;display: flex;padding-top: 20px;">
-          I'm a full-stack developer based in Toronto with an avid interest in Android and web development.
-          Currently, I'm building BrainScape, a virtual platform where students can study together anytime, anywhere.
-          Other than that, I enjoy playing ping pong and the piano. 
-          </span></p>
-    </div>
-    <div class = "w3-col m2 w3-hide-small w3-hide-large" style="color: black;">.</div>
+                                        <span
+                                            style="font-style:italic;font-weight: 100; padding-left: 12px;color: #827f7f;">
+                                            UW Reality Labs<br></span>
 
-    <div class="w3-col s12 w3-hide-medium w3-hide-large">
-        <h3><span style="font-weight: bold;">About Me</span></h3>
-        <p><span style="text-align: center;display: flex;padding-top: 10px;padding-left: 50px;padding-right: 50px;">
-          I'm a full-stack developer based in Toronto with an avid interest for Android and web development.
-          Currently, I'm building BrainScape, a virtual platform where students can study together anytime, anywhere.
-          Other than that, I enjoy playing ping pong and the piano. 
-          </span></p>
-      </div>
-    <div class="w3-col m12 l12 w3-hide-small">
-      <img class="w3-image flowerImage" src="images/flower.png" style="margin-left:0;color: black; text-align: center;padding-top:50px;width:80%">
-    </div>
+                                    </span></p>
+                            </div>
 
-    <div class="w3-col s12 w3-hide-large w3-hide-medium">
-        <img class="w3-image flowerImage" src="images/flower.png" style="margin-left:0;color: black; text-align: center;padding-top:20px;width: 130%">
-      </div>
-  </div>
-</div>
+                            <div class="w3-row" style="margin-top: -2%;line-height: 2em;">
+                                <p><span style="font-weight: 100; padding-left: 12px;color: #827f7f;-webkit-box-decoration-break: clone;
+                                box-decoration-break: clone;">
+                                        Co-founded an augmented reality design team and recruited 86 additional members through organizing exposure-focused events.</span></p>
+                            </div>
 
-<!-- Projects Section -->
-<div class="w3-container project-div" style="padding-top:100px; padding-bottom: 50px; background-color: black;" id="team">
-    <h3 class="w3-center" style="color: white;"><span style="font-weight: bold;">My Projects</span></h3>
-    <h1 class="w3-center w3-hide-small w3-hide-medium">Hover over the images to see more...</h1>
+                        </div>
+                    </div>
 
-    <div class="w3-row-padding" style="padding-top: 40px;">
-        <div class="w3-col l4 m12 s12 w3-margin-bottom">
-            <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-                <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-                    <div class="w3-row">
-                        <div class="w3-row" style="padding-top: 20px;">
-                            <div class="w3-col projectType l4 m3 s7" style="background-color: #390d98;border-radius: 5px;text-align: center;
-                            font-weight: bold;color:#9570e6;">Augmented Reality</div>
+                    <div class="w3-col w3-padding l6 m12 s12" style="padding-left: 0;">
+                        <div class="w3-col l2 w3-hide-medium w3-hide-small"
+                            style="padding-top: 25px;display: flex;justify-content: center;align-items: center;">
+                            <img class="w3-image logo" src="images/ninjaLogo.png" style="border-radius: 8px;">
+                        </div>
+                        <div class="w3-col s2 m2 w3-hide-large"
+                            style="padding-top: 25px;display: flex;justify-content: center;align-items: center;">
+                            <img class="w3-image logo" src="images/ninjaLogo.png"
+                                style="margin-left:0;border-radius: 8px;">
+                        </div>
+                        <div class="w3-col l10 m10 s10">
+                            <div class="w3-row">
+                                <p><span style="font-weight: 300; padding-left: 12px;color: white;">
+                                        Programming Instructor<br>
 
-                            <div class="w3-col l5 m6 s2" style="color: transparent;">.</div>
-                            <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                                <p><a href="https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop" 
-                                    class="w3-ripple w3-transparent" 
-                                    target="_blank" 
-                                    style="background-image: none;background-color: transparent;">
-                                    <i class="fa fa-share"></i></a></p>
+                                        <span
+                                            style="font-style:italic;font-weight: 100; padding-left: 12px;color: #827f7f;">
+                                            Code Ninjas<br></span>
+
+                                    </span></p>
+                            </div>
+
+                            <div class="w3-row" style="margin-top: -2%;line-height: 2em;">
+                                <p><span style="font-weight: 100; padding-left: 12px;color: #827f7f;-webkit-box-decoration-break: clone;
+                                box-decoration-break: clone;">Designed a children's programming curriculum. Taught game development with
+                                Arduino, Makeblock, and Makecode using JavaScript and Scratch.</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-row">
+                    <div class="w3-col w3-padding l6 m12 s12">
+                        <div class="w3-col l2 w3-hide-medium w3-hide-small"
+                            style="padding-top: 25px;display: flex;justify-content: center;align-items: center;">
+                            <img class="w3-image logo" src="images/womenLogo.png" style="border-radius: 8px;">
+                        </div>
+                        <div class="w3-col s2 m2 w3-hide-large"
+                            style="padding-top: 25px;display: flex;justify-content: center;align-items: center;">
+                            <img class="w3-image logo" src="images/womenLogo.png"
+                                style="margin-left:0;border-radius: 8px;">
+                        </div>
+                        <div class="w3-col textLogo l10 m10 s10">
+                            <div class="w3-row">
+                                <p><span style="font-weight: 300; padding-left: 12px;color: white;">
+                                        Director of Sponsorships<br>
+
+                                        <span
+                                            style="font-style:italic;font-weight: 100; padding-left: 12px;color: #827f7f;">
+                                            Women in Waterloo Engineering<br></span>
+                                    </span></p>
+                            </div>
+
+                            <div class="w3-row" style="margin-top: -2%;line-height: 2em;">
+                                <p><span style="font-weight: 100; padding-left: 12px;color: #827f7f;-webkit-box-decoration-break: clone;
+                                box-decoration-break: clone;">
+                                        Work with various companies (Tesla, Toyota, AMD) to coordinate
+                                        sponsorships, and set budgets for events.</span></p>
                             </div>
                         </div>
-                            
-                        <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
-                            <h2>Résuview</h2>
+                    </div>
+
+                    <div class="w3-col w3-padding l6 m12 s12" style="padding-left: 0;">
+                        <div class="w3-col l2 w3-hide-medium w3-hide-small"
+                            style="padding-top: 25px;display: flex;justify-content: center;align-items: center;">
+                            <img class="w3-image logo" src="images/hacksLogo.png" style="border-radius: 8px;">
                         </div>
+                        <div class="w3-col s2 m2 w3-hide-large"
+                            style="padding-top: 25px;display: flex;justify-content: center;align-items: center;">
+                            <img class="w3-image logo" src="images/hacksLogo.png"
+                                style="margin-left:0;border-radius: 8px;">
+                        </div>
+                        <div class="w3-col l10 m10 s10">
+                            <div class="w3-row">
+                                <p><span style="font-weight: 300; padding-left: 12px;color: white;">
+                                        Logistics Executive<br>
 
-                    </div>
+                                        <span
+                                            style="font-style:italic;font-weight: 100; padding-left: 12px;color: #827f7f;">
+                                            YR Hacks<br></span>
 
-                    <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop','_newtab');">
-                        <video src= "videos/resuviewVideo.mp4"
-                            type="video/mp4" 
-                            muted class="resuview-vid"
-                            poster="images/thumbnail1.png"
-                            loop style="width: 100%;"> 
-                        </video>
-                    </div>
-
-                    <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">
-                        <video src= "videos/resuviewVideo.mp4"
-                            type="video/mp4" 
-                            muted class="resuview-vid"
-                            poster="images/thumbnail1.png"
-                            loop style="width: 100%;"> 
-                        </video>
-                    </div>
-
-                    <script> 
-                        let clip1 = document.querySelector(".resuview-vid") 
-                        //if desktop
-                        if (window.orientation != "undefined") {
-                            // play
-                            clip1.addEventListener("mouseover", function (e) { 
-                            clip1.play(); }) 
-                            // pause 
-                            clip1.addEventListener("mouseout", function (e) { 
-                            clip1.load(); }) 
-                        }
-                        //if mobile
-                        else{
-                            // play
-                            clip1.on("click touchstart", "video", function(){
-                            clip1.play();})
-                            // pause
-                            clip1.onended = function() {
-                            clip1.load();};
-                        }
-                    </script>
-
-                    <div class = "w3-row">
-                        <h4 class="skillList">MySQL</h4>
-                        <h4 class="skillList">Unity</h4>
-                        <h4 class="skillList">PHP</h4>
-                        <h4 class="skillList">HTML &amp CSS</h4>
-                    </div>
-
-
-                    <div class="w3-row">
-                        <h1>
-                            An AR environment that displays individuals' résumes next to their faces at networking events.
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="w3-col l4 m12 s12 w3-margin-bottom">
-            <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-                <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-                    <div class="w3-row">
-                        <div class="w3-row" style="padding-top: 20px;">
-                            <div class="w3-col projectType l5 m4 s8" style="background-color: #064483;border-radius: 5px;text-align: center;
-                            font-weight: bold;color:#53a1ef;">Android Development</div>
-
-                            <div class="w3-col l4 m5 s1" style="color: transparent;">.</div>
-                            <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                                <p><a href="https://github.com/pearl-natalia/spave" 
-                                    class="w3-ripple w3-transparent" 
-                                    target="_blank" 
-                                    style="background-image: none;background-color: transparent;">
-                                    <i class="fa fa-share"></i></a></p>
+                                    </span></p>
                             </div>
-                        </div>
 
-                        <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
-                            <h2>SPΛVE</h2>
-                        </div>
-                    </div>
-                    
-                    <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://play.google.com/store/apps/details?id=com.spave.spave&pcampaignid=web_share','_newtab');">  
-                        <video src= "videos/spaveVideo.mov"
-                            type="video/mp4" 
-                            muted class="spave-vid"
-                            poster="images/thumbnail2.png"
-                            loop style="width: 100%;"> 
-                        </video>
-                    </div>
-
-                    <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">  
-                        <video src= "videos/spaveVideo.mov"
-                            type="video/mp4" 
-                            muted class="spave-vid"
-                            poster="images/thumbnail2.png"
-                            loop style="width: 100%;"> 
-                        </video>
-                    </div>
-
-                    <script> 
-                        let clip2 = document.querySelector(".spave-vid") 
-                        //if desktop
-                        if (window.orientation != "undefined") {
-                            // play
-                            clip2.addEventListener("mouseover", function (e) { 
-                            clip2.play(); }) 
-                            // pause 
-                            clip2.addEventListener("mouseout", function (e) { 
-                            clip2.load(); }) 
-                        }
-                        //if mobile
-                        else{ 
-                            // play
-                            clip2.on("click touchstart", "video", function(){
-                            clip2.play();})
-                            // pause
-                            clip2.onended = function() {
-                            clip2.load();};
-                        }
-                    </script>
-
-                    <div class = "w3-row">
-                        <h4 class="skillList">Android Studio</h4>
-                        <h4 class="skillList">Java</h4>
-                        <h4 class="skillList">HTML &amp CSS</h4>
-                        <h4 class="skillList">JavaScript</h4>
-
-                    </div>
-
-                    <div class="w3-row">
-                        <h1>
-                            A budgeting app to optimize user savings when shopping.<br>
-                            <span style="color: transparent;">.</span>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="w3-col l4 m12 s12 w3-margin-bottom">
-            <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-                <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-                    <div class="w3-row">
-                        <div class="w3-row" style="padding-top: 20px;">
-                            <div class="w3-col projectType l3 m3 s5" style="background-color: #7a0a0a;border-radius: 5px;text-align: center;
-                            font-weight: bold;color:#df8383;">Robotics</div>
-
-                            <div class="w3-col l6 m6 s4" style="color: transparent;">.</div>
-                            <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                                <p><a href="https://devpost.com/software/handsfree-y7lsbq" 
-                                    class="w3-ripple w3-transparent" 
-                                    target="_blank" 
-                                    style="background-image: none;background-color: transparent;">
-                                    <i class="fa fa-share"></i></a></p>
+                            <div class="w3-row" style="margin-top: -2%;line-height: 2em;">
+                                <p><span style="font-weight: 100; padding-left: 12px;color: #827f7f;-webkit-box-decoration-break: clone;
+                                box-decoration-break: clone;">
+                                        Planned events with sponsors (Cohere, AMD, IBM) for a school district-wide
+                                        hackathon of 350+ students.</span></p>
                             </div>
-                        </div>
-                        <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%;">
-                            <h2>Autorithm</h2>
+
                         </div>
                     </div>
-
-                    <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://devpost.com/software/handsfree-y7lsbq');">
-                        <video src= "videos/autorithm.mp4"
-                            type="video/mp4" 
-                            muted class="autorithm-vid"
-                            poster="images/thumbnail3.png"
-                            loop style="width: 100%;"> 
-                        </video>
-                    </div>
-
-                    <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">
-                        <video src= "videos/autorithm.mp4"
-                            type="video/mp4" 
-                            muted class="autorithm-vid"
-                            poster="images/thumbnail3.png"
-                            loop style="width: 100%;"> 
-                        </video>
-                    </div>
-
-                    <script> 
-                        let clip3 = document.querySelector(".autorithm-vid") 
-                        //if desktop
-                        if (window.orientation != "undefined") {
-                            // play
-                            clip3.addEventListener("mouseover", function (e) { 
-                            clip3.play(); }) 
-                            // pause 
-                            clip3.addEventListener("mouseout", function (e) { 
-                            clip3.load(); }) 
-                        }
-                        //if mobile
-                        else{
-                            // play
-                            clip3.on("click touchstart", "video", function(){
-                            clip3.play();})
-                            // pause
-                            clip3.onended = function() {
-                            clip3.load();};
-                        }
-                    </script>
-
-                    <div class = "w3-row">
-                        <h4 class="skillList">EV3</h4>
-                        <h4 class="skillList">HTML &amp CSS</h4>
-                        <h4 class="skillList">Ultrasonic Sensors</h4>
-                        <h4 class="skillList">PHP</h4>
-                        <h4 class="skillList">C</h4>
-                    </div>
-
-                    <div class="w3-row">
-                        <h1>
-                            EV3 robot that automates food-package assembly, accompanied by a system to match volunteers with nearby pick-up locations.
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="w3-row-padding rowTwo">
-        <div class="w3-col l4 m12 s12 w3-margin-bottom">
-            <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-                <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-                    <div class="w3-row">
-                        <div class="w3-row" style="padding-top: 20px;">
-                            <div class="w3-col projectType l5 m3 s6" style="background-color: #485434;border-radius: 5px;text-align: center;
-                            font-weight: bold;color: #88a063;">Web Development</div>
-
-                            <div class="w3-col l4 m5 s3" style="color: transparent;">.</div>
-                            <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                                <p><a href="https://devpost.com/software/brainscape" 
-                                    class="w3-ripple w3-transparent" 
-                                    target="_blank" 
-                                    style="background-image: none;background-color: transparent;">
-                                    <i class="fa fa-share"></i></a></p>
-                            </div>
-                        </div>
-
-                        <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
-                            <h2>BrainScape</h2>
-                        </div>
-                    </div>
-                    
-                    <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://devpost.com/software/brainscape','_newtab');">  
-                        <video src= "videos/spaveVideo.mov"
-                            type="video/mp4" 
-                            muted class="spave-vid"
-                            poster="images/thumbnail4.png"
-                            loop style="width: 100%;"> 
-                        </video>
-                    </div>
-
-                    <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">  
-                        <video src= "videos/spaveVideo.mov"
-                            type="video/mp4" 
-                            muted class="brainScape-vid"
-                            poster="images/thumbnail4.png"
-                            loop style="width: 100%;"> 
-                        </video>
-                    </div>
-
-                    <script> 
-                        let clip4 = document.querySelector(".spave-vid") 
-                        //if desktop
-                        if (window.orientation != "undefined") {
-                            // play
-                            clip4.addEventListener("mouseover", function (e) { 
-                            clip4.play(); }) 
-                            // pause 
-                            clip4.addEventListener("mouseout", function (e) { 
-                            clip4.load(); }) 
-                        }
-                        //if mobile
-                        else{ 
-                            // play
-                            clip4.on("click touchstart", "video", function(){
-                            clip4.play();})
-                            // pause
-                            clip4.onended = function() {
-                            clip4.load();};
-                        }
-                    </script>
-
-                    <div class = "w3-row">
-                        <h4 class="skillList">HTML &amp CSS</h4>
-                        <h4 class="skillList">JavaScript</h4>
-                    </div>
-
-                    <div class="w3-row">
-                        <h1>
-                            An virtual platform where students can study with each other in simulated environments.
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="w3-col l4 m12 s12 w3-margin-bottom">
-            <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-                <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-                    <div class="w3-row">
-                        <div class="w3-row" style="padding-top: 20px;">
-                            <div class="w3-col projectType l5 m3 s6" style="background-color: #7a0a0a;border-radius: 5px;text-align: center;
-                            font-weight: bold;color:#df8383;">Game Development</div>
-
-                            <div class="w3-col l4 m6 s3" style="color: transparent;">.</div>
-                            <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                                <p><a href="https://github.com/pearl-natalia/super-mario-bros" 
-                                    class="w3-ripple w3-transparent" 
-                                    target="_blank" 
-                                    style="background-image: none;background-color: transparent;">
-                                    <i class="fa fa-share"></i></a></p>
-                            </div>
-                        </div>
-
-                        <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%">
-                            <h2>Super Mario Bros</h2>
-                        </div>
-                    </div>
-                    
-                    <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://github.com/pearl-natalia/super-mario-bros','_newtab');">  
-                        <video src= "videos/spaveVideo.mov"
-                            type="video/mp4" 
-                            muted class="spave-vid"
-                            poster="images/thumbnail5.png"
-                            loop style="width: 100%;"> 
-                        </video>
-                    </div>
-
-                    <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">  
-                        <video src= "videos/spaveVideo.mov"
-                            type="video/mp4" 
-                            muted class="spave-vid"
-                            poster="images/thumbnail5.png"
-                            loop style="width: 100%;"> 
-                        </video>
-                    </div>
-
-                    <script> 
-                        let clip5 = document.querySelector(".spave-vid") 
-                        //if desktop
-                        if (window.orientation != "undefined") {
-                            // play
-                            clip5.addEventListener("mouseover", function (e) { 
-                            clip5.play(); }) 
-                            // pause 
-                            clip5.addEventListener("mouseout", function (e) { 
-                            clip5.load(); }) 
-                        }
-                        //if mobile
-                        else{ 
-                            // play
-                            clip5.on("click touchstart", "video", function(){
-                            clip5.play();})
-                            // pause
-                            clip5.onended = function() {
-                            clip5.load();};
-                        }
-                    </script>
-
-                    <div class = "w3-row">
-                        <h4 class="skillList">Python</h4>
-                    </div>
-
-                    <div class="w3-row">
-                        <h1>
-                            An interactive replication of a Super Mario Bros game level.<br>
-                            <span style="color: transparent;">.</span>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="w3-col l4 m12 s12 w3-margin-bottom">
-            <div class="w3-card w3-padding-small projectsBox" style="border-radius: 8px;">
-                <div class="w3-container" style="background-color: #2b2a2a73; border-radius: 8px;">
-                    <div class="w3-row">
-                        <div class="w3-row" style="padding-top: 20px;">
-                            <div class="w3-col projectType l5 m3 s6" style="background-color: #390d98;border-radius: 5px;text-align: center;
-                            font-weight: bold;color:#9570e6;">Game Development</div>
-
-                            <div class="w3-col l4 m6 s3" style="color: transparent;">.</div>
-                            <div class="w3-col arrow l3 m3 s3" style="display:flex;justify-content:right;padding-right:20px;">
-                                <p><a href="https://github.com/pearl-natalia/game-of-life" 
-                                    class="w3-ripple w3-transparent" 
-                                    target="_blank" 
-                                    style="background-image: none;background-color: transparent;">
-                                    <i class="fa fa-share"></i></a></p>
-                            </div>
-                        </div>
-                        <div class="w3-col l12 m12 s12" style="text-align: center;margin-top: -3%;">
-                            <h2>Game of Life</h2>
-                        </div>
-                    </div>
-
-                    <div class="w3-row w3-hide-small w3-hide-medium" style="padding-top: 10px;height:fit-content" onClick="window.open('https://github.com/pearl-natalia/game-of-life');">
-                        <video src= "videos/autorithm.mp4"
-                            type="video/mp4" 
-                            muted class="autorithm-vid"
-                            poster="images/thumbnail6.png"
-                            loop style="width: 100%;"> 
-                        </video>
-                    </div>
-
-                    <div class="w3-row w3-hide-large" style="padding-top: 10px;height:fit-content">
-                        <video src= "videos/autorithm.mp4"
-                            type="video/mp4" 
-                            muted class="autorithm-vid"
-                            poster="images/thumbnail6.png"
-                            loop style="width: 100%;"> 
-                        </video>
-                    </div>
-
-                    <script> 
-                        let clip6 = document.querySelector(".autorithm-vid") 
-                        //if desktop
-                        if (window.orientation != "undefined") {
-                            // play
-                            clip6.addEventListener("mouseover", function (e) { 
-                            clip6.play(); }) 
-                            // pause 
-                            clip6.addEventListener("mouseout", function (e) { 
-                            clip6.load(); }) 
-                        }
-                        //if mobile
-                        else{
-                            // play
-                            clip6.on("click touchstart", "video", function(){
-                            clip6.play();})
-                            // pause
-                            clip6.onended = function() {
-                            clip6.load();};
-                        }
-                    </script>
-
-                    <div class = "w3-row">
-                        <h4 class="skillList">Python</h4>
-                    </div>
-
-                    <div class="w3-row">
-                        <h1>
-                            A text-only version of the board game, The Game of Life.<br><br>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- work experience better -->
-<div class="w3-container work-div" style="padding:16px 16px;background-color: black;" id="work">
-    <div class="w3-row-padding w3-hide-medium w3-hide-small" style="padding-bottom:50px;">
-        <h3 class="w3-center experienceTitle" style="float:center;padding-left:-16px;background-color: #90ee9000;color: #ffffff;font-weight: bold;">My Experience</h3>
-    </div>
-
-    <div class="w3-row-padding w3-hide-large" style="padding-bottom: 25px;">
-        <h3 class="w3-center experienceTitle" style="float:center;padding-left:-16px;background-color: #90ee9000;color: #ffffff;font-weight: bold;">My Experience</h3>
-    </div>
-    <div class="w3-container experiences">
-        <div class="w3-row">
-            <div class="w3-col w3-padding l6 m12 s12">
-                <div class="w3-col l2 m2 w3-hide-small" style="padding-top: 25px;">
-                    <img class="w3-image logo1" src="images/ninjaLogo.png" style="margin-left:0;border-radius: 8px;">
-                </div>
-                <div class="w3-col s2 w3-hide-medium w3-hide-large" style="padding-top: 18px;">
-                    <img class="w3-image logo1" src="images/ninjaLogo.png" style="margin-left:0;border-radius: 8px;">
-                </div>
-                <div class="w3-col l10 m10 s10">
-                    <div class="w3-row">
-                        <p><span style="font-weight: 100; padding-left: 15px;color: white;">
-                            Programming Instructor<br>
-                            
-                            <span style="font-style:italic;font-weight: 100; padding-left: 15px;color: #827f7f;">
-                            Code Ninjas<br></span>
-
-                        </span></p>
-                    </div>
-
-                    <div class="w3-row" style="margin-top: -2%;line-height: 2em;">
-                        <p><span style="font-weight: 100; padding-left: 15px;color: #827f7f;-webkit-box-decoration-break: clone;
-                        box-decoration-break: clone;">
-                        Designed a children's programming curriculum. Taught game development with Arduino, Makeblock, and Makecode using JavaScript and Scratch.
-                        </span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-col w3-padding l6 m12 s12">
-                <div class="w3-col l2 m2 w3-hide-small" style="padding-top: 25px;">
-                    <img class="w3-image logo1" src="images/hacksLogo.png" style="margin-left:0;border-radius: 8px;">
-                </div>
-                <div class="w3-col s2 w3-hide-medium w3-hide-large" style="padding-top: 18px;">
-                    <img class="w3-image logo1" src="images/hacksLogo.png" style="margin-left:0;border-radius: 8px;">
-                </div>
-                <div class="w3-col l10 m10 s10" >
-                    <div class="w3-row" >
-                        <p><span style="font-weight: 100; padding-left: 15px;color: white;">
-                            Logistics Executive<br>
-                            
-                            <span style="font-style:italic;font-weight: 100; padding-left: 15px;color: #827f7f;">
-                            YR Hacks<br></span>
-
-                        </span></p>
-                    </div>
-
-                    <div class="w3-row" style="margin-top: -2%;line-height: 2em;">
-                        <p><span style="font-weight: 100; padding-left: 15px;color: #827f7f;-webkit-box-decoration-break: clone;
-                        box-decoration-break: clone;">
-                        Planned events with sponsors (Cohere, AMD, IBM) for a school district-wide hackathon of 350+ students.</span></p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-row">
-            <div class="w3-col w3-padding l6 m12 s12" >
-                <div class="w3-col l2 m2 w3-hide-small" style="padding-top: 25px;">
-                    <img class="w3-image" src="images/womenLogo.png" style="margin-left:0;border-radius: 8px;">
-                </div>
-                <div class="w3-col s2 w3-hide-medium w3-hide-large" style="padding-top: 18px;">
-                    <img class="w3-image" src="images/womenLogo.png" style="margin-left:0;border-radius: 8px;">
-                </div>
-                <div class="w3-col textLogo l10 m10 s10">
-                    <div class="w3-row">
-                        <p><span style="font-weight: 100; padding-left: 15px;color: white;">
-                            Sponsorship Director<br>
-                            
-                            <span style="font-style:italic;font-weight: 100; padding-left: 15px;color: #827f7f;">
-                            Women in Waterloo Engineering<br></span>
-                        </span></p>
-                    </div>
-
-                    <div class="w3-row" style="margin-top: -2%;line-height: 2em;">
-                        <p><span style="font-weight: 100; padding-left: 15px;color: #827f7f;-webkit-box-decoration-break: clone;
-                        box-decoration-break: clone;">
-                        Work with various companies (Tesla, Boeing) to coordinate  sponsorships, and set budgets for events.</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-col w3-padding l6 m12 s12">
-                <div class="w3-col l2 m2 w3-hide-small" style="padding-top: 25px;">
-                    <img class="w3-image logo1" src="images/mcmichaelLogo.png" style="margin-left:0;border-radius: 8px;">
-                </div>
-                <div class="w3-col s2 w3-hide-medium w3-hide-large" style="padding-top: 18px;">
-                    <img class="w3-image logo1" src="images/mcmichaelLogo.png" style="margin-left:0;border-radius: 8px;">
-                </div>
-                <div class="w3-col l10 m10 s10">
-                    <div class="w3-row" >
-                        <p><span style="font-weight: 100; padding-left: 15px;color: white;">
-                            Chairman<br>
-                            
-                            <span style="font-style:italic;font-weight: 100; padding-left: 15px;color: #827f7f;">
-                            McMichael Canadian Art Collection<br></span>
-                        </span></p>
-                    </div>
-
-                    <div class="w3-row" style="margin-top: -2%;line-height: 2em;">
-                        <p><span style="font-weight: 100; padding-left: 15px;color: #827f7f;-webkit-box-decoration-break: clone;
-                        box-decoration-break: clone;">
-                        Actively recruit and coordinate volunteer placements for a committee of 150+ members for auctions, galas, and art classes.
-                        </span></p>
-                    </div>   
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-row">
-            <div class="w3-col w3-padding l6 m12 s12">
-                <div class="w3-col l2 m2 w3-hide-small" style="padding-top: 25px;">
-                    <img class="w3-image logo1" src="images/medrehabLogo.png" style="margin-left:0;border-radius: 8px;">
-                </div>
-                <div class="w3-col s2 w3-hide-medium w3-hide-large" style="padding-top: 18px;">
-                    <img class="w3-image logo1" src="images/medrehabLogo.png" style="margin-left:0;border-radius: 8px;">
-                </div>
-                <div class="w3-col l10 m10 s10" >
-                    <div class="w3-row">
-                        <p><span style="font-weight: 100; padding-left: 15px;color: white;">
-                            Physiotherapy Intern<br>
-                            
-                            <span style="font-style:italic;font-weight: 100; padding-left: 15px;color: #827f7f;">
-                            MedRehab Physiotherapy<br></span>
-                        </span></p>
-                    </div>
-
-                    <div class="w3-row" style="margin-top: -2%;line-height: 2em;">
-                        <p><span style="font-weight: 100; padding-left: 15px;color: #827f7f;-webkit-box-decoration-break: clone;
-                        box-decoration-break: clone;">
-                        Performed ultrasound, electrotherapy, shockwave treatments to enhance 
-                        functional abilities and charted patient progress.</span></p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="w3-col w3-padding l6 m12 s12">
-                <div class="w3-col l2 m2 w3-hide-small" style="padding-top: 25px;">
-                    <img class="w3-image logo1" src="images/jaLogo.png" style="margin-left:0;border-radius: 8px;">
-                </div>
-                <div class="w3-col s2 w3-hide-medium w3-hide-large" style="padding-top: 18px;">
-                    <img class="w3-image logo1" src="images/jaLogo.png" style="margin-left:0;border-radius: 8px;">
-                </div>
-
-                <div class="w3-col textLogo l10 m10 s10">
-                    <div class="w3-row">
-                        <p><span style="font-weight: 100; padding-left: 15px;color: white;">
-                            Marketing Executive<br>
-                            
-                            <span style="font-style:italic;font-weight: 100; padding-left: 15px;color: #827f7f;">
-                            Junior Achievement - Flicker Candles<br></span>
 
                         
-                        </span></p>
+                </div>
+
+                <div class="w3-row">
+                    <div class="w3-col w3-padding l6 m12 s12">
+                        <div class="w3-col l2 w3-hide-medium w3-hide-small"
+                            style="padding-top: 25px;display: flex;justify-content: center;align-items: center;">
+                            <img class="w3-image logo" src="images/mcmichaelLogo.png" style="border-radius: 8px;">
+                        </div>
+                        <div class="w3-col s2 m2 w3-hide-large"
+                            style="padding-top: 25px;display: flex;justify-content: center;align-items: center;">
+                            <img class="w3-image logo" src="images/mcmichaelLogo.png"
+                                style="margin-left:0;border-radius: 8px;">
+                        </div>
+                        <div class="w3-col l10 m10 s10">
+                            <div class="w3-row">
+                                <p><span style="font-weight: 300; padding-left: 12px;color: white;">
+                                        Chairwoman<br>
+
+                                        <span
+                                            style="font-style:italic;font-weight: 100; padding-left: 12px;color: #827f7f;">
+                                            McMichael Canadian Art Collection<br></span>
+                                    </span></p>
+                            </div>
+
+                            <div class="w3-row" style="margin-top: -2%;line-height: 2em;">
+                                <p><span style="font-weight: 100; padding-left: 12px;color: #827f7f;-webkit-box-decoration-break: clone;
+                                box-decoration-break: clone;">
+                                        Actively recruit and coordinate volunteer placements for a committee of 150+
+                                        members for auctions, galas, and art classes.
+                                    </span></p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="w3-row" style="margin-top: -2%;line-height: 2em;">
-                        <p><span style="font-weight: 100; padding-left: 15px;color: #827f7f;-webkit-box-decoration-break: clone;
-                        box-decoration-break: clone;">
-                        Implemented digital marketing campaigns, designed online advertisements, and established branding of the candles.</span></p>
-                    </div>
+                    <div class="w3-col w3-padding l6 m12 s12">
+                        <div class="w3-col l2 w3-hide-medium w3-hide-small"
+                            style="padding-top: 25px;display: flex;justify-content: center;align-items: center;">
+                            <img class="w3-image logo" src="images/jaLogo.png" style="border-radius: 8px;">
+                        </div>
+                        <div class="w3-col s2 m2 w3-hide-large"
+                            style="padding-top: 25px;display: flex;justify-content: center;align-items: center;">
+                            <img class="w3-image logo" src="images/jaLogo.png"
+                                style="border-radius: 8px;margin-left:0">
+                        </div>
 
+                        <div class="w3-col textLogo l10 m10 s10" style="padding-left: 0;">
+                            <div class="w3-row">
+                                <p><span style="font-weight: 300; padding-left: 12px;color: white;">
+                                        Marketing Executive<br>
+
+                                        <span
+                                            style="font-style:italic;font-weight: 100; padding-left: 12px;color: #827f7f;">
+                                            Junior Achievement - Flicker Candles<br></span>
+
+
+                                    </span></p>
+                            </div>
+
+                            <div class="w3-row" style="margin-top: -2%;line-height: 2em;">
+                                <p><span style="font-weight: 100; padding-left: 12px;color: #827f7f;-webkit-box-decoration-break: clone;
+                                    box-decoration-break: clone;">
+                                        Implemented digital marketing campaigns, designed online advertisements, and
+                                        established branding of the candles.</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
+
+        <!-- Contact Section -->
+        <div class="w3-container contact-div" style="padding-top:150px;padding-bottom: 150px;background-color: black;">
+            <div class="w3-row-padding contactMe">
+
+                <div class="w3-col contactButtons l5 w3-hide-medium w3-hide-small" style="padding-left: 100px;">
+                    <h3>Let's Connect!</h3>
+                    <p>Want to have a coffee chat or reach just out?<br>Feel free to contact me!<br><br></p>
+                    <p><a href="mailto:pnatalia@uwaterloo.ca" class="w3-button w3-black"><i
+                                class="fa fa-envelope" style="padding-right:10px"></i>&ensp;pnatalia [at] uwaterloo.ca</a></p>
+                    <p><a href="https://linkedin.com/in/pearlnatalia" class="w3-button w3-black" target="_blank"
+                            style="z-index: 2;"><i class="fa fa-linkedin" style="padding-right:10px"></i>&ensp;linkedin.com/in/pearlnatalia</a></p>
+                </div>
+
+                <div class="w3-col contactButtons m7 s12 w3-hide-large" style="padding-left: 20px;">
+                    <h3>Let's Connect!</h3>
+                    <p>Want to have a coffee chat or reach just out?<br>Feel free to contact me!<br><br></p>
+                    <p><a href="mailto:pnatalia@uwaterloo.ca" class="w3-button w3-black"><i
+                                class="fa fa-envelope" style="padding-right:10px"></i>&ensp;pnatalia@uwaterloo.ca</a></p>
+                    <p><a href="https://linkedin.com/in/pearlnatalia" class="w3-button w3-black" target="_blank"><i
+                                class="fa fa-linkedin" style="padding-right:10px"></i>&ensp;linkedin.com/in/pearlnatalia</a></p>
+                </div>
+
+
+                <div class="w3-col l7 w3-hide-small w3-hide-medium"
+                    style="margin-left: -15%;position: relative;z-index: 0;">
+                    <video video autoplay loop muted playsinline id="contact-video">
+                        <source src="videos/contactVideo.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="w3-col m5 w3-hide-small w3-hide-large" style="margin-left: -25%;">
+                    <video width="400%" video autoplay loop muted playsinline id="contact-video2">
+                        <source src="videos/contactVideo.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black">
+            <a href="#" class="w3-button w3-hover-opacity"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <div class="w3-large w3-section" style="padding-bottom:10px;">
+                <a href="mailto:pnatalia@uwaterloo.ca" class="fa fa-envelope w3-hover-opacity"
+                    style="text-decoration: none;padding-right: 3px;"></a>
+                <a href="https://linkedin.com/in/pearlnatalia" class="fa fa-linkedin w3-hover-opacity" target="_blank"
+                    style="text-decoration: none;padding-right: 3px;"></a>
+                <a href="https://github.com/pearl-natalia" class="fa fa-github w3-hover-opacity" target="_blank"
+                    style="text-decoration: none;padding-right: 3px;"></a>
+                <a href="https://se-webring.xyz/" class="fas fa-user-graduate w3-hover-opacity" target="_blank"
+                    style="text-decoration: none;"></a>
+            </div>
+        </footer>
+
+        <!-- ending tag for afterzoom div -->
     </div>
-
-</div>
-
-<!-- Contact Section -->
-<div class="w3-container contact-div" style="padding-top:80px;padding-bottom: 150px;">
-    <div class="w3-row-padding contactMe">
-    
-    <div class="w3-col contactButtons l5 w3-hide-medium w3-hide-small" style="padding-left: 100px;">
-        <h3><span style="font-weight: bold;">Let's Connect!</span></h3>
-        <p>Want to have a coffee chat or reach just out?<br>Feel free to contact me!<br><br></p>
-        <p><a href="mailto:pnatalia@uwaterloo.ca" class="w3-button w3-black"><i class="fa fa-envelope"></i>&ensp;pnatalia [at] uwaterloo.ca</a></p>
-        <p><a href="https://linkedin.com/in/pearlnatalia" class="w3-button w3-black" target="_blank" style="z-index: 2;"><i class="fa fa-linkedin"></i>&ensp;linkedin.com/in/pearlnatalia</a></p>
-    </div>
-
-    <div class="w3-col contactButtons m7 s12 w3-hide-large" style="padding-left: 20px;">
-        <h3><span style="font-weight: bold;">Let's Connect!</span></h3>
-        <p>Want to have a coffee chat or reach just out?<br>Feel free to contact me!<br><br></p>
-        <p><a href="mailto:pnatalia@uwaterloo.ca" class="w3-button w3-black"><i class="fa fa-envelope"></i>&ensp;pnatalia@uwaterloo.ca</a></p>
-        <p><a href="https://linkedin.com/in/pearlnatalia" class="w3-button w3-black" target="_blank"><i class="fa fa-linkedin"></i>&ensp;linkedin.com/in/pearlnatalia</a></p>
-    </div>
-        
-        
-      <div class="w3-col l7 w3-hide-small w3-hide-medium" style="margin-left: -15%;position: relative;z-index: 0;">
-        <video video autoplay loop muted playsinline id="contact-video">
-            <source src="videos/contactVideo.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="w3-col m5 w3-hide-small w3-hide-large" style="margin-left: -25%;">
-        <video width="400%" video autoplay loop muted playsinline id="contact-video2">
-            <source src="videos/contactVideo.mp4" type="video/mp4">
-        </video>
-      </div>
-
-    </div>   
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black">
-    <a href="#" class="w3-button w3-hover-opacity"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-large w3-section">
-      <a href="mailto:pnatalia@uwaterloo.ca" class="fa fa-envelope w3-hover-opacity" style="text-decoration: none;"></a>
-      <a href="https://linkedin.com/in/pearlnatalia" class="fa fa-linkedin w3-hover-opacity" target="_blank" style="text-decoration: none;"></a>
-      <a href="https://github.com/pearl-natalia" class="fa fa-github w3-hover-opacity" target="_blank" style="text-decoration: none;"></a>
-    </div>
-</footer>
-
-<!-- ending tag for afterzoom div -->
-</div>
-
 </body>
+
 </html>

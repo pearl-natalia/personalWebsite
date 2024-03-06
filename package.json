@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@splidejs/splide-extension-url-hash": "^0.3.0",
+    "swiper": "^11.0.7"
+  }
+}
