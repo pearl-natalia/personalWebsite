@@ -378,6 +378,8 @@ body {
     background-position: right bottom;
   }
   .abt1,.abt2,.abt3,.abt4,.abt5,.abt6,.abt7{border-radius: 0;}
+  .contact-div{padding-top:15px;}
+
 
 }
 
@@ -481,6 +483,8 @@ body {
     background: rgba(0, 0, 0, 0.398);
     margin-top: 0;
   }
+  .contact-div{padding-top:100px;}
+
 }
 
 
