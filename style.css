@@ -35,7 +35,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 577px) and (max-width: 1024px){p{font-size: 18px;}}
 @media screen and (min-width: 1025px) {p{font-size: 20px;}}
 
-@media screen and (max-width: 767px) {h1{font-size: 12px;}}
+@media screen and (max-width: 767px) {h1{font-size: 13px;}}
 @media screen and (min-width: 768px) and (max-width: 1024px){h1{font-size:20px;}}
 @media screen and (min-width: 1025px) {h1{font-size: 16px;}}
 
@@ -121,14 +121,7 @@ body {
   align-items: center;
 }
 
-.skillList {
-  border-radius: 20px;
-  background: rgb(38, 38, 38);
-  font: Raleway;
-  display:inline-block;
-  color: #827f7f;
-  font-weight:bolder;
-}
+
 
 
 .about-div{
@@ -189,46 +182,6 @@ body {
 
 } */
 
-/* project carousel */
-#carousel {
-  display: flex;
-  overflow-x: scroll; /* for draggable scrolling */
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
-  margin: 0 auto 0 auto;
-  width: 100vw;
-  height: fit-content;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-}
-
-#carousel::-webkit-scrollbar {
-  display: none; 
-  -webkit-overflow-scrolling: touch; 
-}
-
-.item{
-  transition: transform 0.5s, flex 0.5s;
-  min-width: 33vw;
-  /* animation: scroll 30s linear infinite; */
-}
-
-.blank{
-  min-width: 33vw;
-
-}
-
-/* #carousel:hover .item {
-  animation-play-state: paused;
-  
-} */
-
-@keyframes scroll {
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 /* contact page */
 .contact-video2{
   position: relative;
@@ -241,9 +194,74 @@ body {
 
 .w3-button{
   background-image: url('images/buttonBackground.png');
-  border-radius: 5px;
+  border-radius: 20px;
   text-align: left;
 }
+
+/* project video */
+.project-video {
+  width: calc(70vw);
+  height: calc(45vh);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  position: absolute;
+  top: 2.5vh;
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.project-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  filter: brightness(50%) contrast(100%) saturate(100%);
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+
+.skills {
+  width: calc(70vw);
+  height: calc(5vh);
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40.5vh;
+  margin-left: 10px;
+}
+
+
+.skillList {
+  border-radius: 20px;
+  background: rgb(37, 37, 37);
+  font: Raleway;
+  display:inline-block;
+  color: #827f7f;
+  text-align: left;
+  margin-right: 5px;
+  padding: 2px 0;
+}
+.skillList:hover{
+  background: #353535;
+}
+
+
+
 
 /* mobile */
 @media (max-width: 767px) {
@@ -398,9 +416,7 @@ body {
   .projectsBox:hover, .projectsBox1:hover{
     cursor: pointer;
   }
-  .skillList:hover{
-    background: #232323;
-  }
+  
   .nameDivPadding1{
     height: 35vh;
     padding:48px;
