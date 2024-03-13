@@ -200,8 +200,6 @@ body {
 
 /* project video */
 .project-video {
-  width: calc(70vw);
-  height: calc(45vh);
   display: flex;
   justify-content: center;
   align-items: flex-start; 
@@ -233,7 +231,6 @@ body {
 }
 
 .skills {
-  width: calc(70vw);
   height: calc(5vh);
   display: flex;
   justify-content: flex-start; 
@@ -241,7 +238,6 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 40.5vh;
   margin-left: 10px;
 }
 
@@ -321,6 +317,15 @@ body {
   .aboutContainer{height:66vh;}
   .aboutMe{height:18vh;}
   .aboutMe2{height:40vh;}
+
+  .project-video {
+    width: calc(90vw);
+    height: calc(70vh);
+  }
+  .skills {
+    width: calc(90vw);
+    top: 65vh;
+  }
 }
 
 
@@ -362,8 +367,17 @@ body {
     flex-direction: column;
     text-align: left;
     gap: 2vw;
-    
   }  
+
+  .project-video {
+    width: calc(70vw);
+    height: calc(45vh);
+  }
+
+  .skills {
+    width: calc(70vw);
+    top: 40.5vh;
+  }
 }
 
 /* mobile and ipad */
