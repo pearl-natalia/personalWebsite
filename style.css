@@ -461,6 +461,7 @@ body {
     width:20vw;
     background-image: url('about/canoe.png');
     background-position: center center;
+    cursor: default;
 
   }
   .abt2{width:40vw;background-image: url('about/gallery.png');}
@@ -479,7 +480,10 @@ body {
     background-position: center center;
 
   }
-  .abt5{width:25vw;background-image: url('about/bungee.png');}
+  .abt5{
+    width:25vw;background-image: url('about/bungee.png');
+    cursor: default;
+  }
   .abt6{
     width:15vw;
     background-image: url('about/glasses.png');
