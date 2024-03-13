@@ -464,7 +464,9 @@ body {
     cursor: default;
 
   }
-  .abt2{width:40vw;background-image: url('about/gallery.png');}
+  .abt2{
+    width:40vw;background-image: url('about/gallery.png');
+  }
   .abt3{
     width:22vw;
     background-image: url('about/hackathon.png');
@@ -478,7 +480,6 @@ body {
     width:29vw;
     background-image: url('about/award.png');
     background-position: center center;
-
   }
   .abt5{
     width:25vw;background-image: url('about/bungee.png');
@@ -498,7 +499,6 @@ body {
     width:30vw;
     background-image: url('about/tesla.png');
     background-position: left center;
-
   }
   .abt1,.abt2-0,.abt2, .abt3, .abt4, .abt5, .abt6, .abt7, .abt8{
     margin:1vw;

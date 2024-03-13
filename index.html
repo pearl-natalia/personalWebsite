@@ -137,7 +137,7 @@
             style="width: 100vw;margin: 0;padding-left: 0;padding-right: 0;margin-top: 0;">
             <div class="w3-row aboutMe" style="width: 100vw;">
 
-                <a href="https://devpost.com/software/brainscape">
+                <a id="dynamicLink1" href="#">
                     <div class="w3-col abt1" style="height:100%;">
                         <p id="text1" style="padding-left: 5%;padding-right: 5%;">Built BrainScape @ UWestern's SheHacks+
                             hackathon</p>
@@ -147,19 +147,20 @@
                     <p id="text2-0" style="padding-left: 5%;padding-right: 5%;">Canoed through Lake Louise</p>
                 </div>
 
-                <a href="https://mcmichael.com/volunteers/">
+                <a id="dynamicLink2" href="#">
                     <div class="w3-col abt2" style="height:100%;">
                         <p id="text2" style="padding-left: 5%;padding-right: 5%;">Chairwoman of McMichael Canadian<br>Art
                             Collection's Volunteer Committee</p>
                     </div>
                 </a>
-
-                <div class="w3-col abt2-1" style="height:100%;">
-                </div>
+                <a id="dynamicLink2-1" href="#">
+                    <div class="w3-col abt2-1" style="height:100%;">
+                    </div>
+                </a>
             </div>
 
             <div class="w3-row aboutMe2" style="width: 100vw;">
-                <a href="https://devpost.com/software/handsfree-y7lsbq">
+                <a id="dynamicLink3" href="#">
                     <div class="w3-col abt3" style="height:100%;">
                         <p id="text3" style="padding-left: 5%;padding-right: 5%;width:80%">Built Autorithm @ Waterloo's
                             Women in Engineering Hackathon </p>
@@ -173,7 +174,7 @@
                         anytime, anywhere. I'm also looking for work in summer 2024. Other than that, I enjoy playing ping pong and the piano.
                     </h1>
                 </div>
-                <a href="https://www.aspirations.org/aspirations-canada">
+                <a id="dynamicLink4" href="#">
                     <div class="w3-col abt4" style="height:100%;">
                         <p id="text4" style="padding-left: 5%;padding-right: 5%;">NCWIT 2023 Ontario Recipient</p>
                     </div>
@@ -181,21 +182,23 @@
             </div>
 
             <div class="w3-row aboutMe" style="width: 100vw;">
-                <div class="w3-col abt5" style="height:100%;">
-                    <p id="text5" style="padding-left: 5%;padding-right: 5%;">Bungee jumped off a 160ft bridge in BC</p>
-                </div>
-                <a href="https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop">
+                <a id="dynamicLink5" href="#">
+                    <div class="w3-col abt5" style="height:100%;">
+                        <p id="text5" style="padding-left: 5%;padding-right: 5%;">Bungee jumped off a 160ft bridge in BC</p>
+                    </div>
+                </a>
+                <a id="dynamicLink6" href="#">
                     <div class="w3-col abt6" style="height:100%;">
                         <p id="text6" style="padding-left: 5%;padding-right: 5%;">Built an AR platform<br>from scratch</p>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/posts/pearlnatalia_we-just-ran-another-networking-event-in-collaboration-activity-7158973013428768769-4SB1?utm_source=share&utm_medium=member_desktop">
+                <a id="dynamicLink7" href="#">
                     <div class="w3-col abt7" style="height:100%;">
                         <p id="text7" style="padding-left: 10%;padding-right: 10%;">Hosted various networking events for
                             UWaterloo students</p>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/posts/pearlnatalia_we-just-ran-a-tesla-event-for-waterloo-women-activity-7154495107755380736-jWg_?utm_source=share&utm_medium=member_desktop">
+                <a id="dynamicLink8" href="#">
                     <div class="w3-col abt8" style="height:100%;">
                         <p id="text8" style="padding-left: 10%;padding-right: 10%;">Collaborated with Tesla to host an
                             information &amp networking session</p>
@@ -205,6 +208,50 @@
                 </div>
             </div>
         </div>
+
+        <!-- changing link based on screen size -->
+        <script>
+            var link1 = document.getElementById('dynamicLink1');
+            var link2 = document.getElementById('dynamicLink2');
+            var link21 = document.getElementById('dynamicLink2-1');
+            var link3 = document.getElementById('dynamicLink3');
+            var link4 = document.getElementById('dynamicLink4');
+            var link5 = document.getElementById('dynamicLink5');
+            var link6 = document.getElementById('dynamicLink6');
+            var link7 = document.getElementById('dynamicLink7');
+            var link8 = document.getElementById('dynamicLink8');
+
+            changeLink();
+        
+            function changeLink() {
+                if (window.innerWidth < 1025) {
+                    // Change the link for smaller screens
+                    link1.href = 'https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop';
+                    link2.href = 'https://mcmichael.com/volunteers/';
+                    link21.href = 'https://www.linkedin.com/posts/pearlnatalia_we-just-ran-a-tesla-event-for-waterloo-women-activity-7154495107755380736-jWg_?utm_source=share&utm_medium=member_desktop';               
+                    link3.removeAttribute('href');
+                    link4.removeAttribute('href');
+                    link5.href = 'https://www.aspirations.org/aspirations-canada';
+                    link6.removeAttribute('href');
+                    link7.href = 'https://devpost.com/software/handsfree-y7lsbq';
+                    link8.href = 'https://www.linkedin.com/posts/pearlnatalia_we-just-ran-another-networking-event-in-collaboration-activity-7158973013428768769-4SB1?utm_source=share&utm_medium=member_desktop';
+                } else {
+                    // Change the link for larger screens
+                    link1.href = 'https://devpost.com/software/brainscape';
+                    link2.href = 'https://mcmichael.com/volunteers/';
+                    link21.removeAttribute('href');
+                    link3.href = 'https://devpost.com/software/handsfree-y7lsbq';
+                    link4.href = 'https://www.aspirations.org/aspirations-canada';
+                    link5.removeAttribute('href');
+                    link6.href = 'https://www.linkedin.com/posts/pearlnatalia_we-built-an-ar-application-that-allows-you-activity-7138306303940091904-i2vG?utm_source=share&utm_medium=member_desktop';
+                    link7.href = 'https://www.linkedin.com/posts/pearlnatalia_we-just-ran-another-networking-event-in-collaboration-activity-7158973013428768769-4SB1?utm_source=share&utm_medium=member_desktop';
+                    link8.href = 'https://www.linkedin.com/posts/pearlnatalia_we-just-ran-a-tesla-event-for-waterloo-women-activity-7154495107755380736-jWg_?utm_source=share&utm_medium=member_desktop';
+
+                }
+            }
+            window.addEventListener('resize', changeLink);
+        </script>
+
         <!-- flower -->
         <!-- <div class="w3-col m8 l8 w3-hide-small"
             style="display: flex;justify-content: flex-end;align-items: flex-start;transform: translate(60px);">
