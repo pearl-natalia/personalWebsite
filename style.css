@@ -122,12 +122,13 @@ body {
   align-items: center;
 }
 
-
-
-
 .about-div{
   place-items: center;
   background-color: black;
+}
+
+.aboutHover:hover{
+  color: #b0b0b0;
 }
 
 /* about me page */
